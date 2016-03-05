@@ -62,6 +62,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversion.cs" />
     <Compile Include="Converter.aspx.cs">
       <DependentUpon>Converter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
