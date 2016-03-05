@@ -1,0 +1,6 @@
+E:\IS301-Internet Programming\ISProjects\Exercise-1\bin\Exercise-1.dll.config
+E:\IS301-Internet Programming\ISProjects\Exercise-1\bin\Exercise-1.dll
+E:\IS301-Internet Programming\ISProjects\Exercise-1\bin\Exercise-1.pdb
+E:\IS301-Internet Programming\ISProjects\Exercise-1\obj\Debug\Exercise-1.dll
+E:\IS301-Internet Programming\ISProjects\Exercise-1\obj\Debug\Exercise-1.pdb
+E:\IS301-Internet Programming\ISProjects\Exercise-1\obj\Debug\Exercise-1.csprojResolveAssemblyReference.cache

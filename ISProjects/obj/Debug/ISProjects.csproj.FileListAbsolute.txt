@@ -1,0 +1,6 @@
+E:\IS301-Internet Programming\ISProjects\ISProjects\bin\ISProjects.dll.config
+E:\IS301-Internet Programming\ISProjects\ISProjects\bin\ISProjects.dll
+E:\IS301-Internet Programming\ISProjects\ISProjects\bin\ISProjects.pdb
+E:\IS301-Internet Programming\ISProjects\ISProjects\obj\Debug\ISProjects.csprojResolveAssemblyReference.cache
+E:\IS301-Internet Programming\ISProjects\ISProjects\obj\Debug\ISProjects.dll
+E:\IS301-Internet Programming\ISProjects\ISProjects\obj\Debug\ISProjects.pdb
