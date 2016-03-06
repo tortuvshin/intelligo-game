@@ -16,7 +16,10 @@ namespace Exercise_1
 
         protected void signUpButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Home.aspx");
+            if (IsValid)
+            {
+                Response.Redirect("ThankYou.aspx");
+            }
         }
 
 

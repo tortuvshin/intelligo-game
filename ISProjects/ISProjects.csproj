@@ -61,6 +61,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="ThankYou.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

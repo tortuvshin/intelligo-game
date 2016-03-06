@@ -38,7 +38,7 @@
                     <asp:TextBox ID="firstNameText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="fnameValidator" runat="server" ControlToValidate="firstNameText" ErrorMessage="First name must be filled in"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="fnameValidator" runat="server" ControlToValidate="firstNameText" ErrorMessage="First name must be filled in" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -48,7 +48,7 @@
                     <asp:TextBox ID="lastNameText" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style4">
-                    <asp:RequiredFieldValidator ID="lnameValidator" runat="server" ErrorMessage="last name  must be filled in" ControlToValidate="lastNameText"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="lnameValidator" runat="server" ErrorMessage="last name  must be filled in" ControlToValidate="lastNameText" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style4"></td>
             </tr>
@@ -68,7 +68,7 @@
                     <asp:TextBox ID="emailText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="emailRequiredFieldValidator" runat="server" ErrorMessage="Email  must be filled in" ControlToValidate="emailText" Display="Dynamic"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="emailRequiredFieldValidator" runat="server" ErrorMessage="Email  must be filled in" ControlToValidate="emailText" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="mailRegularExpressionValidator" runat="server" ControlToValidate="emailText" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
@@ -79,7 +79,7 @@
                     <asp:TextBox ID="passwordText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="passValidator" runat="server" ErrorMessage=" Password must be filled in" ControlToValidate="passwordText"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="passValidator" runat="server" ErrorMessage=" Password must be filled in" ControlToValidate="passwordText" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -89,8 +89,8 @@
                     <asp:TextBox ID="rePasswordText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="repassValidator" runat="server" ErrorMessage="Re-password  must be filled in" ControlToValidate="rePasswordText"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="passwordText" ErrorMessage="CompareValidator"></asp:CompareValidator>
+                    <asp:RequiredFieldValidator ID="repassValidator" runat="server" ErrorMessage="Re-password  must be filled in" ControlToValidate="rePasswordText" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="rePasswordText" ErrorMessage="CompareValidator" ControlToValidate="passwordText"></asp:CompareValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -100,7 +100,7 @@
                     <asp:TextBox ID="companyText" runat="server" OnTextChanged="TextBox7_TextChanged"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="compValidator" runat="server" ErrorMessage="Company must be filled in" ControlToValidate="companyText"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="compValidator" runat="server" ErrorMessage="Company must be filled in" ControlToValidate="companyText" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -110,7 +110,7 @@
                     <asp:TextBox ID="address1Text" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="addr1Validator" runat="server" ErrorMessage="Address  must be filled in" ControlToValidate="address1Text"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="addr1Validator" runat="server" ErrorMessage="Address  must be filled in" ControlToValidate="address1Text" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -120,7 +120,7 @@
                     <asp:TextBox ID="address2Text" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="addr2Validator" runat="server" ErrorMessage="Address 2  must be filled in" ControlToValidate="address2Text"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="addr2Validator" runat="server" ErrorMessage="Address 2  must be filled in" ControlToValidate="address2Text" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -130,7 +130,7 @@
                     <asp:TextBox ID="cityText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="cityValidator" runat="server" ErrorMessage="City must be filled in" ControlToValidate="cityText"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="cityValidator" runat="server" ErrorMessage="City must be filled in" ControlToValidate="cityText" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -140,7 +140,7 @@
                     <asp:TextBox ID="stateText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="stateValidator" runat="server" ErrorMessage="State must be filled in" ControlToValidate="stateText"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="stateValidator" runat="server" ErrorMessage="State must be filled in" ControlToValidate="stateText" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -150,8 +150,8 @@
                     <asp:TextBox ID="zipText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="zipValidator" runat="server" ErrorMessage="Zip must be filled in" ControlToValidate="zipText"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="zipRegularExpressionValidator" runat="server" ControlToValidate="zipText" ErrorMessage="RegularExpressionValidator" ValidationExpression="\d{5}(-\d{4})?"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="zipValidator" runat="server" ErrorMessage="Zip must be filled in" ControlToValidate="zipText" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="zipRegularExpressionValidator" runat="server" ControlToValidate="zipText" ErrorMessage="Example 11111-1111" ValidationExpression="\d{5}(-\d{4})?"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -171,8 +171,8 @@
                     <asp:TextBox ID="phoneText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="phoneValidator" runat="server" ErrorMessage="Phone must be filled in" ControlToValidate="phoneText"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="phoneRegularExpressionValidator" runat="server" ControlToValidate="phoneText" ErrorMessage="RegularExpressionValidator" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="phoneValidator" runat="server" ErrorMessage="Phone must be filled in" ControlToValidate="phoneText" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="phoneRegularExpressionValidator" runat="server" ControlToValidate="phoneText" ErrorMessage="Example 976-9999999" ValidationExpression="\d{3}(-\d{8})?"></asp:RegularExpressionValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -185,12 +185,51 @@
             </tr>
         </table>
     </div>
-        <asp:CheckBox ID="submitCheckBox" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" Text="I understand that submitting this information will flood my inbox with junkmail" />
+        <asp:CheckBox ID="submitCheckBox" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" Text="Please check the box indicating that you will receive floods of junkmail"/>
+        <span runat="server" id="_understandValidator" controltovalidate="_understand" errormessage="Please check the box indicating that you will receive floods of junkmail" evaluationfunction="RequiredCheckBoxValidatorEvaluateIsValid" initialvalue="" style="color:Red;visibility:hidden;"><img src="oops.gif" border="0" /></span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <p>
             <asp:Button ID="signUpButton" runat="server" Text="Sign up!" OnClick="signUpButton_Click" />
         </p>
         <asp:ValidationSummary ID="signUpSummary" runat="server" ShowMessageBox="True" />
     </form>
+
+    <script lang="javascript">
+        function RequiredCheckBoxValidatorEvaluateIsValid(val) {
+            var control;
+            control = document.all[val.controltovalidate];
+            if (control.checked)
+                return true;
+            else
+                return false;
+        }
+        // Add our span to the list of validators
+        Page_Validators.push(document.all["_understandValidator"]);
+
+        // Change the attributes of the span to be the correct types
+        // This mimics code from ValidatorOnLoad() found in WebUIValidation.js
+        //
+        val = document.all["_understandValidator"];
+        if (typeof (val.evaluationfunction) == "string") {
+            eval("val.evaluationfunction = " + val.evaluationfunction + ";");
+        }
+        if (typeof (val.isvalid) == "string") {
+            if (val.isvalid == "False") {
+                val.isvalid = false;
+                Page_IsValid = false;
+            }
+            else {
+                val.isvalid = true;
+            }
+        } else {
+            val.isvalid = true;
+        }
+        if (typeof (val.enabled) == "string") {
+            val.enabled = (val.enabled != "False");
+        }
+        ValidatorHookupControlID(val.controltovalidate, val);
+        ValidatorHookupControlID(val.controlhookup, val);
+
+    </script>
 </body>
 </html>
