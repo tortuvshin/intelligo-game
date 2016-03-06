@@ -14,12 +14,28 @@ namespace Exercise_1
 
         }
 
+        protected void signUpButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home.aspx");
+        }
+
+
+        protected void femaleRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
         protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
         protected void TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
