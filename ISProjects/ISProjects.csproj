@@ -57,14 +57,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Authors.xml" />
+    <Content Include="CacheExample.aspx" />
     <Content Include="Converter.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="stylesheet.css" />
     <Content Include="ThankYou.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CacheExample.aspx.cs">
+      <DependentUpon>CacheExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CacheExample.aspx.designer.cs">
+      <DependentUpon>CacheExample.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Conversion.cs" />
     <Compile Include="Converter.aspx.cs">
       <DependentUpon>Converter.aspx</DependentUpon>
@@ -86,6 +97,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
