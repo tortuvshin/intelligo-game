@@ -17,7 +17,9 @@
             <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
             <asp:HyperLink runat="server" id="_page3Link" ForeColor="white" NavigateUrl="page3.aspx">Page 3</asp:HyperLink>
             <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-            <asp:HyperLink runat="server" id="_page4Link" ForeColor="white" NavigateUrl="page4.aspx">Page 4</asp:HyperLink>
+            <asp:HyperLink runat="server" id="_page4Link" ForeColor="white" NavigateUrl="index.aspx">Index</asp:HyperLink>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <asp:HyperLink runat="server" id="HyperLink1" ForeColor="white" NavigateUrl="CacheExample.aspx">Cache</asp:HyperLink>
           </td>
         </tr>
       </table>
