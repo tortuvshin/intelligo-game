@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" 
+
+    CodeBehind="~/Views/Shared/Site.Master.cs"
+
+    Inherits="ASPNetMVCTutorial.Views.Shared.Site" %>
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+
+    <title><asp:Literal id="litAppTitle" runat="server" /></title>
+
+    <style type="text/css">
+
+        .ApplicationDefault {font-family: Verdana; font-size: 10px;}
+
+        .Title {text-align: center; font-size: 12px; color:Maroon; font-family: 
+
+                        Verdana; font-weight: bold;}
+
+        .AuthorInformation {text-align: center; color:green; margin-top: 5px}
+
+        .MainContent {margin-top: 10px; background-color: #F1FFFF; height: 600px; 
+
+                              overflow: auto; width: 95%; text-align: center;
+
+                              margin-left:auto; margin-right:auto;}
+
+        .Copyright {margin-top: 10px; color: Gray; font-weight:bold; width: 100%; 
+
+                            float: left; text-align: center;}
+
+        .ErrorText {font-family: Verdana; font-weight: bold; color:Maroon;}
+
+        .BoldText {font-family: Verdana; font-weight: bold;}
+
+    </style>
+
+</head>
+
+ 
+
+<body class="ApplicationDefault">
+
+    <div class="Title">
+
+        <asp:Literal id="litApplicationName" runat="server" />
+
+    </div>
+
+    <div class="AuthorInformation">
+
+        <asp:Literal id="litAuthorInformation" runat="server" />
+
+    </div>
+
+    
+
+    <div id="MainContent" class="MainContent">
+
+        <asp:ContentPlaceHolder id="ApplicationContent" runat="server" />
+
+    </div>
+
+    <div class="Copyright">Copy right: The Code Project Open License (CPOL)</div>
+
+</body>
+
+</html>
+
