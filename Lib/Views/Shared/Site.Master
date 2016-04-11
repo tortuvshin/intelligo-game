@@ -5,6 +5,8 @@
         <meta charset="utf-8" />
         <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
         <link href="<%: Url.Content("~/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
         <meta name="viewport" content="width=device-width" />
         <%: Styles.Render("~/Content/css") %>
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -13,19 +15,19 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title"><%: Html.ActionLink("your logo here", "Index", "Home") %></p>
+                    <nav>
+                        <ul id="menu">
+                            <li><%: Html.ActionLink("Нүүр", "Index", "Home") %></li>
+                            <li><%: Html.ActionLink("Тухай", "About", "Home") %></li>
+                            <li><%: Html.ActionLink("Холбоо барих", "Contact", "Home") %></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="float-right">
                     <section id="login">
                         <%: Html.Partial("_LoginPartial") %>
                     </section>
-                    <nav>
-                        <ul id="menu">
-                            <li><%: Html.ActionLink("Home", "Index", "Home") %></li>
-                            <li><%: Html.ActionLink("About", "About", "Home") %></li>
-                            <li><%: Html.ActionLink("Contact", "Contact", "Home") %></li>
-                        </ul>
-                    </nav>
+                    
                 </div>
             </div>
         </header>
@@ -38,7 +40,7 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET MVC Application</p>
+                    <p>&copy; <%: DateTime.Now.Year %> - Цахим номын сан</p>
                 </div>
             </div>
         </footer>

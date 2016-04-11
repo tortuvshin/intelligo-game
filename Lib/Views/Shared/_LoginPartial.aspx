@@ -7,7 +7,7 @@
     <% } %>
 <% } else { %>
     <ul>
-        <li><%: Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })%></li>
-        <li><%: Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })%></li>
+        <li><%: Html.ActionLink("Бүртгүүлэх", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })%></li>
+        <li><%: Html.ActionLink("Нэвтрэх", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })%></li>
     </ul>
 <% } %>
