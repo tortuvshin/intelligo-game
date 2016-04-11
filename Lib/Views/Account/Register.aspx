@@ -1,13 +1,12 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<Lib.Models.RegisterModel>" %>
 
 <asp:Content ID="registerTitle" ContentPlaceHolderID="TitleContent" runat="server">
-    Register
+    Бүртгүүлэх
 </asp:Content>
 
 <asp:Content ID="registerContent" ContentPlaceHolderID="MainContent" runat="server">
     <hgroup class="title">
-        <h1>Register.</h1>
-        <h2>Create a new account.</h2>
+        <h2>Бүртгүүлэх</h2>
     </hgroup>
 
     <% using (Html.BeginForm()) { %>
@@ -30,7 +29,7 @@
                     <%: Html.PasswordFor(m => m.ConfirmPassword) %>
                 </li>
             </ol>
-            <input type="submit" value="Register" />
+            <input type="submit" value="Бүртгүүлэх" />
         </fieldset>
     <% } %>
 </asp:Content>
