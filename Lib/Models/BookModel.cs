@@ -18,13 +18,4 @@ namespace Lib.Models
         public DbSet<Books> Books { get; set; }
     }
 
-    [Table("Books")]
-    public class Books
-    {
-        [Key]
-        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int BookId { get; set; }
-        public string BookName { get; set; }
-    }
-
 }

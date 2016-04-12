@@ -84,3 +84,7 @@ E:\Project\Lib\Lib\bin\zh-Hant\System.Spatial.resources.dll
 E:\Project\Lib\Lib\obj\Debug\Lib.csprojResolveAssemblyReference.cache
 E:\Project\Lib\Lib\obj\Debug\Lib.dll
 E:\Project\Lib\Lib\obj\Debug\Lib.pdb
+E:\Project\Lib\Lib\bin\Org.Mentalis.Security.Cryptography.dll
+E:\Project\Lib\Lib\bin\Mono.Math.dll
+E:\Project\Lib\Lib\bin\Org.Mentalis.Security.Cryptography.xml
+E:\Project\Lib\Lib\bin\Mono.Math.xml

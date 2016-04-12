@@ -67,7 +67,6 @@ mark {
 footer {
     clear: both;
     background-color: #e2e2e2;
-    font-size: .8em;
     height: 100px;
 }
 
@@ -196,7 +195,6 @@ ul#menu {
 
 /* contact */
 .contact h3 {
-    font-size: 1.2em;
 }
 
 .contact p {
@@ -230,8 +228,6 @@ fieldset {
 
 label {
     display: block;
-    font-size: 1.2em;
-    font-weight: 600;
 }
 
 label.checkbox {
@@ -242,14 +238,12 @@ input, textarea {
     border: 1px solid #e2e2e2;
     background: #fff;
     color: #333;
-    font-size: 1.2em;
     margin: 5px 0 6px 0;
     padding: 5px;
     width: 300px;
 }
 
 textarea {
-    font-family: inherit;
     width: 500px;
 }
 
@@ -269,8 +263,6 @@ textarea {
         background-color: #d3dce0;
         border: 1px solid #787878;
         cursor: pointer;
-        font-size: 1.2em;
-        font-weight: 600;
         padding: 7px;
         margin-right: 8px;
         width: auto;
@@ -279,7 +271,6 @@ textarea {
     td input[type="submit"],
     td input[type="button"],
     td button {
-        font-size: 1em;
         padding: 4px;
         margin-right: 4px;
     }
@@ -294,15 +285,11 @@ textarea {
 .message-error {
     clear: both;
     color: #e80c4d;
-    font-size: 1.1em;
-    font-weight: bold;
     margin: 20px 0 10px 0;
 }
 
 .message-success {
     color: #7ac0da;
-    font-size: 1.3em;
-    font-weight: bold;
     margin: 20px 0 10px 0;
 }
 
@@ -313,7 +300,6 @@ textarea {
 /* styles for validation helpers */
 .field-validation-error {
     color: #e80c4d;
-    font-weight: bold;
 }
 
 .field-validation-valid {
@@ -330,8 +316,6 @@ input[type="checkbox"].input-validation-error {
 
 .validation-summary-errors {
     color: #e80c4d;
-    font-weight: bold;
-    font-size: 1.1em;
 }
 
 .validation-summary-valid {
@@ -349,7 +333,6 @@ table {
 }
 
 th {
-    font-size: 1.2em;
     text-align: left;
     border: none 0px;
     padding-left: 0;
@@ -362,7 +345,6 @@ th {
 
     th a:link, th a:visited, th a:active, th a:hover {
         color: #333;
-        font-weight: 600;
         text-decoration: none;
         padding: 0;
     }
@@ -380,7 +362,6 @@ th {
         position: absolute;
         right: 0em;
         top: 0;
-        font-size: 0.75em;
     }
 
 
@@ -414,7 +395,6 @@ tr.pager td {
 
     /* login */
     #login {
-        font-size: .85em;
         margin: 16px 0 16px 0;
         text-align: center;
     }
@@ -434,7 +414,6 @@ tr.pager td {
         #login a {
             background: none;
             color: #999;
-            font-weight: 600;
             margin: 2px;
             padding: 0;
         }
