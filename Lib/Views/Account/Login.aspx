@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<Lib.Models.LoginModel>" %>
 
 <asp:Content ID="loginTitle" ContentPlaceHolderID="TitleContent" runat="server">
-    Log in
+    Нэвтрэх
 </asp:Content>
 
 <asp:Content ID="loginContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -10,13 +10,12 @@
     </hgroup>
 
     <section id="loginForm">
-    <h2>Use a local account to log in.</h2>
     <% using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) { %>
         <%: Html.AntiForgeryToken() %>
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Log in Form</legend>
+            <legend>Нэвтрэх хэсэг</legend>
             <ol>
                 <li>
                     <%: Html.LabelFor(m => m.UserName) %>
@@ -33,16 +32,16 @@
                     <%: Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" }) %>
                 </li>
             </ol>
-            <input type="submit" value="Log in" />
+            <input type="submit" value="Нэвтрэх" />
         </fieldset>
         <p>
-            <%: Html.ActionLink("Register", "Register") %> if you don't have an account.
+            <%: Html.ActionLink("Бүртгүүлэх", "Register") %> 
         </p>
     <% } %>
     </section>
 
     <section class="social" id="socialLoginForm">
-        <h2>Use another service to log in.</h2>
+        <h2>Фэйсбүүкээр нэвтрэх.</h2>
         <%: Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl }) %>
     </section>
 </asp:Content>
