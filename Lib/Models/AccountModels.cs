@@ -40,18 +40,18 @@ namespace Lib.Models
     {
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Current password")]
+        [Display(Name = "Хуучин нууц үг")]
         public string OldPassword { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "{0} доод тал нь {2} тэмдэгтээс урт байна.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "New password")]
+        [Display(Name = "Шинэ нууц үг")]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm new password")]
-        [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+        [Display(Name = "Шинэ нууц үг дахин оруул")]
+        [Compare("NewPassword", ErrorMessage = "Шинэ нууц үг, баталгаажуулах нууц үг таарахгүй байна.")]
         public string ConfirmPassword { get; set; }
     }
 
@@ -63,10 +63,10 @@ namespace Lib.Models
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Нууц үг")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Намайг сана?")]
         public bool RememberMe { get; set; }
     }
 
@@ -77,14 +77,14 @@ namespace Lib.Models
         public string UserName { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "{0} доод тал нь {2} тэмдэгтээс урт байна.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Нууц үг")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Нууц үгээ дахин оруулна уу")]
+        [Compare("Password", ErrorMessage = "Нууц үг таарахгүй байна.")]
         public string ConfirmPassword { get; set; }
     }
 
