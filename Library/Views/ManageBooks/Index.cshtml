@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Itera.Fagdag.November.ViewModels.BookViewModel>
+@Scripts.Render("~/bundles/ManageBooks")
+<div class="row">
+    @Html.Partial("~/Views/ManageBooks/_ManageBooks.cshtml")
+    @{
+        var counter = 0;
+    }
+    @foreach (var bookViewModel in @Model)
+    {
+        using (Html.BeginForm("UpdateBook", "ManageBooks", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            counter += 1;
+            <div class="row">
+                <div class="span1.5">
+                    <div id="thumbnailImage-@counter">
+                        <a href="@Url.Action("Details", "Book", new {id = bookViewModel.BookId})"><img class="thumbnail" src="@Url.Content(bookViewModel.CoverImageUrl)" /></a>
+                    </div>
+                    <div id="imageUpload-@counter" style="display: none">
+                        <label for="file-input-@counter">
+                            <img class="thumbnail" src="@Url.Content(bookViewModel.CoverImageUrl)" />
+                            <a class="icon-pencil" style="float: right"></a>
+                        </label>
+                        <input type="hidden" name="id" value="@bookViewModel.BookId" />
+                        <input id="file-input-@counter" name="CoverImageBase" style="display: none;" type="file" />
+                    </div>
+                </div>
+                <div class="span10">
+                    <p><b>Гарчиг:</b> @bookViewModel.Title</p>
+                    <p><b>Зохиоч:</b> @bookViewModel.Author</p>
+                    <p><b>Тайлбар: </b>@bookViewModel.ShortDescription @Html.ActionLink("Дэлгэрэнгүй", "Details", "Book", new {id = bookViewModel.BookId}, new {@class = "btn"})</p>
+                    <p><b>Хэл:</b> @bookViewModel.Language</p>
+                    <p><b>Хуудас:</b> @bookViewModel.Pages</p>
+                    <p><b>ISBN-10:</b> @bookViewModel.ISBN10 <b>ISBN-13:</b> @bookViewModel.ISBN13</p>
+                    <p><a id="editButton-@counter"class="btn btn-primary" onclick=" editBegin(this.id) ">Засах</a> <input id="doneButton-@counter" type="submit" class="btn btn-primary" value="Хадгалах" onclick=" editEnd(this.id) " style="display: none"/> @Html.ActionLink("Устгах", "RemoveBook", "ManageBooks", new {id = bookViewModel.BookId}, new {@class = "btn btn-danger"})</p>
+                </div>
+            </div>
+            <br/>
+        }
+    }
+</div>
