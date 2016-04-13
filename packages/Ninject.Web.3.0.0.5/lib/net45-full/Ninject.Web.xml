@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ninject.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Ninject.Web.HttpHandlerBase">
+            <summary>
+            A <see cref="T:System.Web.IHttpHandler"/> that supports injections.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.HttpHandlerBase.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler"></see> interface.
+            </summary>
+            <param name="context">An <see cref="T:System.Web.HttpContext"></see> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
+        </member>
+        <member name="M:Ninject.Web.HttpHandlerBase.DoProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler"></see> interface.
+            </summary>
+            <param name="context">An <see cref="T:System.Web.HttpContext"></see> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
+        </member>
+        <member name="P:Ninject.Web.HttpHandlerBase.IsReusable">
+            <summary>
+            Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler"></see> instance.
+            </summary>
+            <value></value>
+            <returns>true if the <see cref="T:System.Web.IHttpHandler"></see> instance is reusable; otherwise, false.</returns>
+        </member>
+        <member name="T:Ninject.Web.KernelContainer">
+            <summary>
+            A static container for the <see cref="T:Ninject.Web.Common.NinjectHttpApplication"/>'s kernel.
+            </summary>
+        </member>
+        <member name="F:Ninject.Web.KernelContainer.kernel">
+            <summary>
+            The ninject kernel.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.KernelContainer.Inject(System.Object)">
+            <summary>
+            Injects the specified instance by using the container's kernel.
+            </summary>
+            <param name="instance">The instance to inject.</param>
+        </member>
+        <member name="P:Ninject.Web.KernelContainer.Kernel">
+            <summary>
+            Gets or sets the kernel that is used in the application.
+            </summary>
+        </member>
+        <member name="T:Ninject.Web.MasterPageBase">
+            <summary>
+            A <see cref="T:System.Web.UI.MasterPage"/> that supports injections.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.MasterPageBase.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Init"></see> event to initialize the page.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="T:Ninject.Web.NinjectHttpModule">
+            <summary>
+            An <see cref="T:System.Web.IHttpModule"/> that injects dependencies into pages and usercontrols.
+            </summary>
+        </member>
+        <member name="F:Ninject.Web.NinjectHttpModule.httpApplication">
+            <summary>
+            The http application managed by this module.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.NinjectHttpModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes a module and prepares it to handle requests.
+            </summary>
+            <param name="context">A <see cref="T:System.Web.HttpApplication"/> that provides access to the methods, properties, and events common to all application objects within an ASP.NET application</param>
+        </member>
+        <member name="M:Ninject.Web.NinjectHttpModule.InjectUserControls(System.Web.UI.Control,System.Boolean)">
+            <summary>
+            Search for usercontrols within the parent control
+            and inject their dependencies using KernelContainer.
+            </summary>
+            <param name="parent">The parent control.</param>
+            <param name="skipDataBoundControls">if set to <c>true</c> special handling of DataBoundControls is skipped.</param>
+        </member>
+        <member name="M:Ninject.Web.NinjectHttpModule.InjectDataBoundControl(System.Object,System.EventArgs)">
+            <summary>
+            Injects a data bound control.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Ninject.Web.NinjectHttpModule.OnPreRequestHandlerExecute(System.Object,System.EventArgs)">
+            <summary>
+            Injects dependencies into web pages and subscribes to their InitComplete
+            Event to inject usercontrols with their dependencies.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="T:Ninject.Web.NinjectWebHttpApplicationPlugin">
+            <summary>
+            The web plugin implementation for MVC
+            </summary>
+        </member>
+        <member name="F:Ninject.Web.NinjectWebHttpApplicationPlugin.kernel">
+            <summary>
+            The kernel
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.NinjectWebHttpApplicationPlugin.#ctor(Ninject.IKernel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ninject.Web.NinjectWebHttpApplicationPlugin"/> class.
+            </summary>
+            <param name="kernel">The kernel.</param>
+        </member>
+        <member name="M:Ninject.Web.NinjectWebHttpApplicationPlugin.Start">
+            <summary>
+            Starts this instance.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.NinjectWebHttpApplicationPlugin.Stop">
+            <summary>
+            Stops this instance.
+            </summary>
+        </member>
+        <member name="P:Ninject.Web.NinjectWebHttpApplicationPlugin.RequestScope">
+            <summary>
+            Gets the request scope.
+            </summary>
+            <value>The request scope.</value>
+        </member>
+        <member name="T:Ninject.Web.PageBase">
+            <summary>
+            A <see cref="T:System.Web.UI.Page"/> that supports injections.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.PageBase.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Init"></see> event to initialize the page.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:Ninject.Web.PageBase.RequestActivation">
+            <summary>
+            Asks the kernel to inject this instance.
+            </summary>
+        </member>
+        <member name="T:Ninject.Web.UserControlBase">
+            <summary>
+            A <see cref="T:System.Web.UI.UserControl"/> that supports injections.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.UserControlBase.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.UserControl.Init"></see> event to initialize the page.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:Ninject.Web.UserControlBase.RequestActivation">
+            <summary>
+            Asks the kernel to inject this instance.
+            </summary>
+        </member>
+        <member name="T:Ninject.Web.WebControlBase">
+            <summary>
+            A <see cref="T:System.Web.UI.WebControls.WebControl"/> that supports injections.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.WebControlBase.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.WebControls.WebControl.Init"></see> event to initialize the page.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:Ninject.Web.WebControlBase.RequestActivation">
+            <summary>
+            Asks the kernel to inject this instance.
+            </summary>
+        </member>
+        <member name="T:Ninject.Web.WebModule">
+            <summary>
+            The mvc nodule
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.WebModule.Load">
+            <summary>
+            Loads the module into the kernel.
+            </summary>
+        </member>
+        <member name="T:Ninject.Web.WebServiceBase">
+            <summary>
+            A <see cref="T:System.Web.Services.WebService"/> that supports injections.
+            </summary>
+        </member>
+        <member name="M:Ninject.Web.WebServiceBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ninject.Web.WebServiceBase"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

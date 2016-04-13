@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Bootstrapper</id>
+    <version>2.0.3.9</version>
+    <title>Bootstrapper</title>
+    <authors>Luis Bocaletti</authors>
+    <owners>Luis Bocaletti</owners>
+    <licenseUrl>http://bootstrapper.codeplex.com/license</licenseUrl>
+    <projectUrl>http://bootstrapper.codeplex.com/</projectUrl>
+    <iconUrl>http://i3.codeplex.com/Download?ProjectName=bootstrapper&amp;DownloadId=289179</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>bootstrapper.codeplex.com uses a convention over configuration approach to initialize your IOC container, create automapper maps and run any other startup tasks that your application might need.</description>
+    <summary>bootstrap your applications container, maps and  startup tasks</summary>
+    <language>en-us</language>
+  </metadata>
+</package>

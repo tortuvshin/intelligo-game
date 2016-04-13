@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Bootstrapper.AutoMapper</id>
+    <version>2.0.3.11</version>
+    <title>Bootstrapper.AutoMapper</title>
+    <authors>Luis Bocaletti</authors>
+    <owners>Luis Bocaletti</owners>
+    <licenseUrl>http://bootstrapper.codeplex.com/license</licenseUrl>
+    <projectUrl>http://bootstrapper.codeplex.com/</projectUrl>
+    <iconUrl>http://i3.codeplex.com/Download?ProjectName=bootstrapper&amp;DownloadId=289179</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Automapper extension for Bootstrapper</description>
+    <summary>Automapper extension for Bootstrapper</summary>
+    <releaseNotes />
+    <copyright />
+    <language>en-us</language>
+    <dependencies>
+      <dependency id="AutoMapper" version="3.0.0" />
+      <dependency id="Bootstrapper" version="2.0.3.9" />
+    </dependencies>
+  </metadata>
+</package>
