@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Owin.Security.Google</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Owin.Security.Google.Infrastructure.Message.Add(System.Collections.Generic.IDictionary{System.String,System.String[]},System.Boolean)">
+            <summary>
+            Adds the openid parameters from querystring or form body into Namespaces and Properties collections.
+            This normalizes the parameter name, by replacing the variable namespace alias with the 
+            actual namespace in the collection's key, and will optionally skip any parameters that are
+            not signed if the strict argument is true.
+            </summary>
+            <param name="parameters">The keys and values of the incoming querystring or form body</param>
+            <param name="strict">True if keys that are not signed should be ignored</param>
+        </member>
+    </members>
+</doc>
