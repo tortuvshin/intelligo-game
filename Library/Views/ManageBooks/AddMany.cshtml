@@ -1,0 +1,26 @@
+﻿@model Itera.Fagdag.November.ViewModels.ManageBooksViewModel
+
+<div class="row">
+    @Html.Partial("~/Views/ManageBooks/_ManageBooks.cshtml")
+    <div class="span12">
+        <legend>Олон ном нэмэх</legend>
+        @using (Html.BeginForm("AddBooks", "ManageBooks", FormMethod.Post, new {enctype = "multipart/form-data"}))
+        {
+            @Html.ValidationSummary(true)
+
+            <div class="row">
+                <div class="span1">
+                    @Html.LabelFor(m => m.ExcelSchemaBase)
+                </div>
+                <div class="span2.5">
+                    @Html.TextBoxFor(m => m.ExcelSchemaBase, new { type = "file", accept = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="span1">
+                    <input type="submit" value="Нэмэх" class="btn" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
