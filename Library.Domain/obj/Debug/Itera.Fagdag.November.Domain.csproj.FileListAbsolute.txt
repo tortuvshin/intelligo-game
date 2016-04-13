@@ -1,0 +1,5 @@
+C:\Users\Programmer\Downloads\itera-virtual-book-library-master\Itera.Fagdag.November.Domain\bin\Debug\Itera.Fagdag.November.Domain.dll
+C:\Users\Programmer\Downloads\itera-virtual-book-library-master\Itera.Fagdag.November.Domain\bin\Debug\Itera.Fagdag.November.Domain.pdb
+C:\Users\Programmer\Downloads\itera-virtual-book-library-master\Itera.Fagdag.November.Domain\obj\Debug\Itera.Fagdag.November.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Programmer\Downloads\itera-virtual-book-library-master\Itera.Fagdag.November.Domain\obj\Debug\Itera.Fagdag.November.Domain.dll
+C:\Users\Programmer\Downloads\itera-virtual-book-library-master\Itera.Fagdag.November.Domain\obj\Debug\Itera.Fagdag.November.Domain.pdb

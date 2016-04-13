@@ -1,0 +1,66 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 130px;
+}
+
+.disableLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.navbar .navbar-inner .container {
+  background-color: #D7090C;
+}
+
+.navbar-inverse .navbar-inner {
+  background-image: -ms-linear-gradient(top, #D7090C, #D7090C);
+  background-image: -webkit-linear-gradient(top, #D7090C, #D7090C);
+  background-image: linear-gradient(to bottom, #D7090C, #D7090C);
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 25px 10px 11px;
+    text-decoration: none;
+    color:  #FFF;
+}
+
+ .navbar .nav > li > a:hover {
+    color: #000;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+ }
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* styles for removing the background from form */
+.no-color {
+  background-color: white;
+  border-style:none;
+}

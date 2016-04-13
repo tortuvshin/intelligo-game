@@ -1,0 +1,8 @@
+/Itera.Fagdag.November/bin
+/Itera.Fagdag.November/obj
+/Itera.Fagdag.November/_bin_deployableAssemblies
+/Itera.Fagdag.November/*.vspscc
+/Itera.Fagdag.November.Domain/bin
+/Itera.Fagdag.November.Domain/obj
+*.suo
+*.vssscc
