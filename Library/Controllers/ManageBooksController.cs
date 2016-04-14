@@ -71,7 +71,7 @@ namespace Itera.Fagdag.November.Controllers
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Please upload an Excel file with book information.");
+                ModelState.AddModelError(string.Empty, "Номын мэдээллийг хуулна уу.");
                 return View("AddMany", manageBooksViewModel);
             }
             return RedirectToAction("index");
@@ -101,12 +101,12 @@ namespace Itera.Fagdag.November.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Please upload a valid Excel document.");
+                    ModelState.AddModelError(string.Empty, "Файлаа хуулна уу");
                 }
             }
             catch (Exception e)
             {
-                ModelState.AddModelError(string.Empty, "Something was wrong with the upload, please make sure the Excel template is correctly defined.");
+                ModelState.AddModelError(string.Empty, "Ямар файл хуулна уу");
                 _logger.Error(e);
             }
         }
@@ -174,7 +174,7 @@ namespace Itera.Fagdag.November.Controllers
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "The fields below must be filled.");
+                ModelState.AddModelError(string.Empty, "Талбаруудыг бүрэн бөглөнө үү");
                 return View("Add", bookViewModel);
             }
 
@@ -191,7 +191,7 @@ namespace Itera.Fagdag.November.Controllers
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Please upload a valid image file.");
+                ModelState.AddModelError(string.Empty, "Алдаа");
             }
         }
 
