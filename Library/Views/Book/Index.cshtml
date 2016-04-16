@@ -1,13 +1,11 @@
 ﻿@model IEnumerable<Itera.Fagdag.November.ViewModels.BookViewModel>
 
-<div class="hero-unit">
-</div>
 <div class="row">
     @foreach (var bookViewModel in @Model)
     {
-        <div class="span4">
+        <div class="item-book">
             <h3>@Html.ActionLink(@bookViewModel.Title, "Details", "Book", new { id = @bookViewModel.BookId }, string.Empty)</h3>
-            <p><b><i>@bookViewModel.Author</i></b></p>
+            <p><b>@bookViewModel.Author</b></p>
             <p><a href="@Url.Action("Details", "Book", new { id = bookViewModel.BookId })"><img class="thumbnail" src="@Url.Content(bookViewModel.CoverImageUrl)" /></a></p>
             <p class="@bookViewModel.ReserveLabelStyle">@bookViewModel.ReserveLabelText</p>
         </div>

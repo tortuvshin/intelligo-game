@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Itera.Fagdag.November.ViewModels.BookViewModel>
 @Scripts.Render("~/bundles/ManageBooks")
-<div class="row">
+<div class="content">
     @Html.Partial("~/Views/ManageBooks/_ManageBooks.cshtml")
     @{
         var counter = 0;
@@ -27,14 +27,14 @@
                 <div class="span10">
                     <p><b>Гарчиг:</b> @bookViewModel.Title</p>
                     <p><b>Зохиоч:</b> @bookViewModel.Author</p>
-                    <p><b>Тайлбар: </b>@bookViewModel.ShortDescription @Html.ActionLink("Дэлгэрэнгүй", "Details", "Book", new {id = bookViewModel.BookId}, new {@class = "btn"})</p>
+                    <p><b>Тайлбар: </b>@bookViewModel.ShortDescription @Html.ActionLink("Дэлгэрэнгүй", "Details", "Book", new { id = bookViewModel.BookId }, new { @class = "btn" })</p>
                     <p><b>Хэл:</b> @bookViewModel.Language</p>
                     <p><b>Хуудас:</b> @bookViewModel.Pages</p>
                     <p><b>ISBN-10:</b> @bookViewModel.ISBN10 <b>ISBN-13:</b> @bookViewModel.ISBN13</p>
-                    <p><a id="editButton-@counter"class="btn btn-primary" onclick=" editBegin(this.id) ">Засах</a> <input id="doneButton-@counter" type="submit" class="btn btn-primary" value="Хадгалах" onclick=" editEnd(this.id) " style="display: none"/> @Html.ActionLink("Устгах", "RemoveBook", "ManageBooks", new {id = bookViewModel.BookId}, new {@class = "btn btn-danger"})</p>
+                    <p><a id="editButton-@counter" class="btn btn-primary" onclick=" editBegin(this.id) ">Засах</a> <input id="doneButton-@counter" type="submit" class="btn btn-primary" value="Хадгалах" onclick=" editEnd(this.id) " style="display: none" /> @Html.ActionLink("Устгах", "RemoveBook", "ManageBooks", new { id = bookViewModel.BookId }, new { @class = "btn btn-danger" })</p>
                 </div>
             </div>
-            <br/>
+            <br />
         }
     }
 </div>

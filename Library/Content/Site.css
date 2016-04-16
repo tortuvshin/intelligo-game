@@ -1,54 +1,77 @@
 ﻿body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+  
+}
+h3 {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+}
+
+p {
+    margin: 0;
+}
+
+.hero-unit {
+    width: 180px;
+    height: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+.content {
+    padding-top: 50px;
+    
+}
+.hero-unit li{
+    line-height: 30px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+}
+.add-book {
+    float: left;
+}
+.item-book {
+    width: 210px;
+    height: 280px;
 }
 
 .thumbnail {
-    width: 100px;
-    height: 130px;
+    width: 210px;
+    height: 210px;
+    background-size: 210px 210px;
 }
 
 .disableLink {
-    pointer-events: none;
-    cursor: default;
 }
 
 .navbar .navbar-inner .container {
-  background-color: #D7090C;
 }
 
 .navbar-inverse .navbar-inner {
-  background-image: -ms-linear-gradient(top, #D7090C, #D7090C);
-  background-image: -webkit-linear-gradient(top, #D7090C, #D7090C);
-  background-image: linear-gradient(to bottom, #D7090C, #D7090C);
 }
 
 .navbar .nav > li > a {
-    float: none;
-    padding: 25px 10px 11px;
-    text-decoration: none;
-    color:  #FFF;
 }
 
  .navbar .nav > li > a:hover {
-    color: #000;
 }
 
 /* styles for validation helpers */
 .field-validation-error {
-    color: #b94a48;
 }
 
 .field-validation-valid {
-    display: none;
  }
 
 input.input-validation-error {
-    border: 1px solid #b94a48;
 }
 
 input[type="checkbox"].input-validation-error {
-    border: 0 none;
 }
 
 .validation-summary-errors {
@@ -56,11 +79,8 @@ input[type="checkbox"].input-validation-error {
 }
 
 .validation-summary-valid {
-    display: none;
 }
 
 /* styles for removing the background from form */
 .no-color {
-  background-color: white;
-  border-style:none;
 }

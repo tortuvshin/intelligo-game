@@ -7,7 +7,7 @@
             
     <ul class="nav">
         <li>
-            @Html.ActionLink("Сайн уу " + User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Хэрэглэгчийн мэдээлэл шинэчлэх" })
+            @Html.ActionLink(User.Identity.GetUserName() + "!", "Manage", "Account", routeValues: null, htmlAttributes: new { title = "Хэрэглэгчийн мэдээлэл шинэчлэх" })
         </li>
         <li>
             @Html.ActionLink("Ном", "Index", "ManageBooks")
