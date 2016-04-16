@@ -18,7 +18,6 @@ namespace Itera.Fagdag.November
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
             IdentityConfig.ConfigureIdentity();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
