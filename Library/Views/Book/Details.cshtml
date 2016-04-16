@@ -13,4 +13,5 @@
         <p><b>ISBN-10:</b> @Model.ISBN10 <b>ISBN-13:</b> @Model.ISBN13</p>
         <p>@Html.ActionLink(@Model.ReserveButtonText, "ReserveAndUpdateCart", "Cart", new { id = @Model.BookId }, new { @class = @Model.ReserveButtonStyle })</p>
     </div>
+
 </div>

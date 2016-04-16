@@ -8,6 +8,7 @@ using Itera.Fagdag.November.Domain.Models;
 using Itera.Fagdag.November.Logging.Contract;
 using Itera.Fagdag.November.Services.Contracts;
 using Itera.Fagdag.November.ViewModels;
+using System.IO;
 
 namespace Itera.Fagdag.November.Controllers
 {
@@ -41,6 +42,12 @@ namespace Itera.Fagdag.November.Controllers
             var bookViewModel = Mapper.Map<Book, BookViewModel>(book);
             bookViewModel.LoggedInUserName = GetUserName();
             return View(bookViewModel);
+        }
+
+        public FileStreamResult GetPDF()
+        {
+            FileStream fs = new FileStream("App_Data/IS12D008.pdf", FileMode.Open, FileAccess.Read);
+            return File(fs, "application/pdf");
         }
     }
 }

@@ -1,10 +1,10 @@
 ﻿@model Itera.Fagdag.November.ViewModels.ManageBooksViewModel
 
-<div class="row">
+<div class="content">
     @Html.Partial("~/Views/ManageBooks/_ManageBooks.cshtml")
     <div class="add-many-book">
         <legend>Олон ном нэмэх</legend>
-        @using (Html.BeginForm("AddBooks", "ManageBooks", FormMethod.Post, new {enctype = "multipart/form-data"}))
+        @using (Html.BeginForm("AddBooks", "ManageBooks", FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
             @Html.ValidationSummary(true)
 
