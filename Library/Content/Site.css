@@ -18,8 +18,7 @@ p {
 .hero-unit {
     width: 180px;
     height: 800px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     float: left;
 }
 .content {
@@ -33,6 +32,10 @@ p {
     font-size: 16px;
 }
 .add-book {
+    float: left;
+}
+
+.add-many-book {
     float: left;
 }
 .item-book {

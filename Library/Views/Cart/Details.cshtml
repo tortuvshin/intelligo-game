@@ -1,10 +1,11 @@
 ﻿@model Itera.Fagdag.November.ViewModels.CartViewModel
 
-<div class="row">
+<div class="content">
     <div class="hero-unit">
         <h2>Цуглуулга</h2>
     </div>
-    @foreach (var book in @Model.CartBooks) {
+    @foreach (var book in @Model.CartBooks)
+    {
         <div class="span2">
             <img class="thumbnail" src="@Url.Content(book.CoverImageUrl)"></img>
         </div>
