@@ -18,5 +18,6 @@ namespace Library.Models
             // Add your customizations after calling base.OnModelCreating(builder);
         }
         public DbSet<Book> Book { get; set; }
+        public DbSet<Author> Author { get; set; }
     }
 }
