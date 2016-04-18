@@ -60,7 +60,7 @@ namespace Library
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
+            SampleData.Initialize(app.ApplicationServices);
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
