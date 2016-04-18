@@ -3,3 +3,6 @@
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/tortuvshin/lib.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 An ASP.NET MVC 5 application using EntityFramework 6.0 beta, OWIN, Ninject, NLog and various other frameworks.
+
+
+[![Join the chat at https://gitter.im/tortuvshin/lib](https://badges.gitter.im/tortuvshin/lib.svg)](https://gitter.im/tortuvshin/lib?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
