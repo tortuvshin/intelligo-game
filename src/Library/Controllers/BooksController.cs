@@ -42,7 +42,7 @@ namespace Library.Controllers
         // GET: Books/Create
         public IActionResult Create()
         {
-            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "AuthorID", "Author");
+            ViewData["AuthorID"] = new SelectList(_context.Author, "AuthorID", "Author");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace Library.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "AuthorID", "Author", book.AuthorID);
+            ViewData["AuthorID"] = new SelectList(_context.Author, "AuthorID", "Author", book.AuthorID);
             return View(book);
         }
 
@@ -74,7 +74,7 @@ namespace Library.Controllers
             {
                 return HttpNotFound();
             }
-            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "AuthorID", "Author", book.AuthorID);
+            ViewData["AuthorID"] = new SelectList(_context.Author, "AuthorID", "Author", book.AuthorID);
             return View(book);
         }
 
@@ -89,7 +89,7 @@ namespace Library.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewData["AuthorID"] = new SelectList(_context.Set<Author>(), "AuthorID", "Author", book.AuthorID);
+            ViewData["AuthorID"] = new SelectList(_context.Author, "AuthorID", "Author", book.AuthorID);
             return View(book);
         }
 
