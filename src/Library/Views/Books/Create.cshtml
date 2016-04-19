@@ -12,10 +12,31 @@
         <hr />
         <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
         <div class="form-group">
+            <label asp-for="Description" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
             <label asp-for="Genre" class="col-md-2 control-label"></label>
             <div class="col-md-10">
                 <input asp-for="Genre" class="form-control" />
                 <span asp-validation-for="Genre" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Language" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Language" class="form-control" />
+                <span asp-validation-for="Language" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Pages" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Pages" class="form-control" />
+                <span asp-validation-for="Pages" class="text-danger" />
             </div>
         </div>
         <div class="form-group">
