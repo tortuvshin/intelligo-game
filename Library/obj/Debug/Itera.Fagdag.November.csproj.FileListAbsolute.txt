@@ -138,3 +138,4 @@ E:\Project\Lib\Library\bin\System.Web.WebPages.Razor.xml
 E:\Project\Lib\Library\obj\Debug\Itera.Fagdag.November.csprojResolveAssemblyReference.cache
 E:\Project\Lib\Library\obj\Debug\Itera.Fagdag.November.dll
 E:\Project\Lib\Library\obj\Debug\Itera.Fagdag.November.pdb
+G:\Library\Library\obj\Debug\Itera.Fagdag.November.csprojResolveAssemblyReference.cache
