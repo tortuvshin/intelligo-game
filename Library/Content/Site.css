@@ -22,8 +22,9 @@ p {
     float: left;
 }
 .content {
+    height: auto;
+    min-height: 800px;
     padding-top: 50px;
-    
 }
 .hero-unit li{
     line-height: 30px;
@@ -41,12 +42,19 @@ p {
 .item-book {
     width: 210px;
     height: 280px;
+    padding-right: 30px;
+    float: left;
 }
 
 .thumbnail {
     width: 210px;
     height: 210px;
     background-size: 210px 210px;
+}
+
+.books-detail {
+    width: 260px;
+    float: left;
 }
 
 .disableLink {
@@ -56,6 +64,7 @@ p {
 }
 
 .navbar-inverse .navbar-inner {
+    background-color: white;
 }
 
 .navbar .nav > li > a {

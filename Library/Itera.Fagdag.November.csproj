@@ -24,6 +24,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -220,7 +221,7 @@
     <Compile Include="Validation\Contracts\IFileFormatValidation.cs" />
     <Compile Include="Validation\FileFormatValidation.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
-    <Compile Include="Identity\IdentityModels.cs" />
+    <Compile Include="Helpers\Identity\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\BookViewModel.cs" />
