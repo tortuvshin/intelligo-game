@@ -1,0 +1,36 @@
+{
+  "name": "Intelligo game",
+  "version": "0.0.1",
+  "description": "Game",
+  "author": "Tortuvshin Byambaa",
+  "copyright": "Copyright 2018 Techstar, Inc.",
+  "license": "MIT",
+  "main": "node app.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tortuvshin/intelligo-game.git"
+  },
+
+  "main": "app.js",
+
+  "scripts": {
+    "start": "node app.js"
+  },
+
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "config": "^1.24.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.1",
+    "express": "^4.15.5",
+    "express-ejs-layouts": "^2.2.0",
+    "express-session": "^1.14.2",
+    "express-validator": "^2.20.8",
+    "path": "^0.12.7",
+    "request": "^2.79.0"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
+}
