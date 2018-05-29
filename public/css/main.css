@@ -1,0 +1,258 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+height: 100%;
+}
+#canvas{
+  transform: rotateY(180deg);
+  position: absolute;
+  left: 240px;
+  top: 0px;
+  box-shadow: -1px 15px 30px -12px gray;
+}
+
+#my_velocityvideo{ /* hard coding so that it hides behind the canvas*/
+  position: absolute;
+  top:50px;
+  left:500px;
+  z-index: -1;
+}
+
+div{
+  position: absolute;;
+  top:20px;
+  left:0px;
+}
+
+body{
+  height: 1px;
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #74ebd5, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes logo{
+  0% {
+    stroke-dashoffset: 1400;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.start_game_menu{
+  position: absolute;
+  width: 960px;
+  height: 720px;
+  left: 240px;
+  margin: auto;
+  background-color: #F0F0F0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 15px 30px -12px gray;
+  z-index: 1;
+}
+
+.st0{
+  fill: none;
+  stroke: url(#linear);
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 0;
+  animation: logo 3s ease-in-out forwards;
+}
+
+#line1{
+  stroke: #0a5
+}
+#line2{
+  stroke: #05a
+}
+#line3{
+  stroke: #05a
+}
+p{
+  font-size: 20px;
+}
+
+#start_game_btn{
+  margin-top: 10px;
+  border: 2px solid #016995;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #016995
+}
+@keyframes btn_hover{
+  from{
+  }
+  to{
+    box-shadow: 0px 0px 0px 1px #016995;
+    width: 50px;
+    border-radius:50%;
+    background-color: #016995;
+    color: white;
+  }
+}
+#start_game_btn:hover{
+  animation: btn_hover 0.3s ease-in-out forwards;
+}
+
+.end_game_menu{
+  /*background-color: #F0F0F0;
+  width: 960px;
+  height: 720px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 15px 30px -12px gray;*/
+
+  position: absolute;
+  width: 960px;
+  height: 720px;
+  left: 240px;
+  margin: auto;
+  background-color: #F0F0F0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 15px 30px -12px gray;
+  z-index: 1;
+}
+
+#try_again_btn{
+  border: 2px solid #FE5C5C;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #FE5C5C
+}
+
+@keyframes try_again_btn_hover{
+  from{
+
+  }
+  to{
+    box-shadow: 0px 0px 0px 3px #FE5C5C;
+    font-weight: bold;
+  }
+}
+
+#try_again_btn:hover{
+  animation: try_again_btn_hover 0.3s ease-in-out forwards;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-delay: 2s;
+  animation-name: fadeInUp;
+}
+
+body {
+  font-size: 62.5%;
+  font-style: Arial;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+
+#fourth-text{
+  font-size: 80px;
+  position: absolute;
+  top: 300px;
+  left: 550px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.score-container{
+  color: white;
+  padding-left: 15px;
+  text-shadow: 15px 15px 9px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}

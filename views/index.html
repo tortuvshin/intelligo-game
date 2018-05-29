@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Intelligo</title>
+  <script src="./js/lib/tracking-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="score-container" style="display: none">
+    <h3 id="score" style="font-weight:bolder">Score: 0</h3>
+    <h5>High Scores:</h5>
+    <ol style="font-size:20px;padding: 10px">
+      <li>Doljko: 992</li>
+      <li>Toroo: 532</li>
+    </ol>
+  </div>
+
+  <div class="game_screen">
+    <div id="fourth-text" >READY?</div>
+
+    <!-- video used to render large image -->
+    <video style="display: none" id="video" width="10" height="10" autoplay></video>
+    <!-- canvas where the video is rendered -->
+    <canvas id="canvas" width="960" height="720"></canvas>
+    <!-- video in which the tracking is done -->
+    <video id="my_velocityvideo" width="200" height="150" preload autoplay loop muted></video>
+  </div>
+
+  <div class="start_game_menu">
+    <svg width="400px" height="400px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+
+    <defs>
+      <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="#05a"/>
+        <stop offset="100%" stop-color="#0a5"/>
+      </linearGradient>
+    </defs>
+
+    <g id="polygon">
+    	<polygon class="st0" points="372.3,66.5 143.6,60.1 25.7,256 136.3,453.7 364.6,457.7 480,263 	"/>
+    	<polygon class="st0" points="372.3,66.5 178.2,144.6 25.7,256 191.2,382.8 364.6,457.7 392.6,250.4 	"/>
+    	<polygon class="st0" points="392.6,250.4 178.2,144.6 191.2,382.8 	"/>
+    	<line id="line1" class="st0" x1="480" y1="263" x2="392.6" y2="250.4"/>
+    	<line id="line2" class="st0" x1="136.3" y1="453.7" x2="191.2" y2="382.8"/>
+    	<line id="line3" class="st0" x1="178.2" y1="144.6" x2="143.6" y2="60.1"/>
+    </g>
+    </svg>
+
+    <h1 class="animated fadeInUp">&lt;INTELLIGO&gt;</h1>
+    <p class="animated fadeInUp">Block game demo</p>
+    <button id="start_game_btn" class="animated fadeInUp">Start Game</button>
+  </div>
+
+  <div class="end_game_menu" style="display:none">
+    <h1>Game Over</h1>
+    <h2><i class="fa fa-trophy" style="color:gray"></i> Score: <span id="result_score"></span></h2>
+    <button id="try_again_btn">Try again</button>
+  </div>
+
+  <script src="./js/variables.js"></script>
+  <script src="./js/game.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</body>
+<script src="js/lib/threelib/three.min.js"></script>
+<script src="js/lib/threelib/DragControls.js"></script>
+<script src="js/lib/threelib/TrackballControls.js"></script>
+<script src="js/lib/threelib/OrbitControls.js"></script>
+<script src="js/lib/threelib/stats.min.js"></script>
+<script src="js/three-animations.js"></script>
+<script src="js/voice.js"></script>
+</html>
