@@ -2,6 +2,12 @@
 
 AR VR Game
 
+## How to Runtime
+
+`npm install`
+
+`node app.js`
+
 ## Built With
 
 * [Tracking.js](https://trackingjs.com/) - Computer Vision
