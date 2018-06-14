@@ -79,7 +79,6 @@ var update = () => {
 
   renderImage();
   colDetection();
-  // drawBricks();
 
 
   //DEBUGGING:

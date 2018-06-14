@@ -31,7 +31,7 @@
     <video id="my_velocityvideo" width="200" height="150" preload autoplay loop muted></video>
   </div>
 
-  <div class="start_game_menu"  id="particles-js">
+  <div class="start_game_menu"  id="particles-start">
 
       <svg width="400px" height="400px"  version="1.1" id="intelligo-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
       <path d="M344.177,376.243H167.823c-17.709,0-32.065-14.356-32.065-32.065V167.824&#10;&#9;c0-17.709,14.356-32.065,32.065-32.065h176.355c17.709,0,32.065,14.356,32.065,32.065v176.355&#10;&#9;C376.242,361.887,361.886,376.243,344.177,376.243z" id="intelligo-logo-center-a"/>
@@ -66,9 +66,9 @@
     <button id="start_game_btn" class="animated fadeInUp">Start Game</button>
   </div>
 
-  <div class="end_game_menu" style="display:none">
+  <div class="end_game_menu" style="display:none" id="particles-end" >
     <h1>Game Over</h1>
-    <h2><i class="fa fa-trophy" style="color:gray"></i> Score: <span id="result_score"></span></h2>
+    <h2><i class="fa fa-trophy" style="color:#afd2bc"></i> Score: <span id="result_score"></span></h2>
     <button id="try_again_btn">Try again</button>
   </div>
 
@@ -83,7 +83,11 @@
 <script src="/js/particles.js"></script>
 <script>
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', 'js/particles.json', function() {
+    particlesJS.load('particles-start', 'js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+
+    particlesJS.load('particles-end', 'js/particles.json', function() {
         console.log('callback - particles.js config loaded');
     });
 </script>

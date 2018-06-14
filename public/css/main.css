@@ -4,8 +4,11 @@
 }
 
 html, body{
-height: 100%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
+
 #canvas{
   transform: rotateY(180deg);
   position: absolute;
@@ -27,22 +30,27 @@ div{
 }
 
 body{
-  height: 1px;
-  background: #74ebd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #74ebd5, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #302575; /* fallback for old browsers */
 }
 
 .start_game_menu{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #12172e;
+  background-color: #302575;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+
+.start_game_menu h1 {
+  color: #afb2bc;
+}
+
+.start_game_menu p {
+  color: #afb2bc;
 }
 
 p{
@@ -51,69 +59,55 @@ p{
 
 #start_game_btn{
   margin-top: 10px;
-  border: 2px solid #e61e1e;
+  border: 2px solid #afb2bc;
   height: 50px;
   width: 150px;
   font-size: 20px;
+  color: #afb2bc;
   background-color: transparent;
 }
 
 .end_game_menu{
-  /*background-color: #F0F0F0;
-  width: 960px;
-  height: 720px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -1px 15px 30px -12px gray;*/
-
   position: absolute;
-  width: 960px;
-  height: 720px;
-  left: 240px;
-  margin: auto;
-  background-color: #F0F0F0;
-  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #333475;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: -1px 15px 30px -12px gray;
   z-index: 1;
 }
-#particles-js .particles-js-canvas-el {
+
+.end_game_menu h1 {
+  color: #afb2bc;
+}
+
+.end_game_menu h2 {
+  color: #afb2bc;
+}
+
+.end_game_menu p {
+  color: #afb2bc;
+}
+
+#particles-start .particles-js-canvas-el {
     position: absolute;
     z-index: -1;
 }
 
-#particles-js .particles-js-canvas-el {
+#particles-end .particles-js-canvas-el {
     position: absolute;
     z-index: -1;
 }
 
 #try_again_btn{
-  border: 2px solid #FE5C5C;
+  border: 2px solid #afb2bc;
   height: 40px;
   width: 150px;
   font-size: 20px;
   background-color: transparent;
-  color: #FE5C5C
-}
-
-@keyframes try_again_btn_hover{
-  from{
-
-  }
-  to{
-    box-shadow: 0px 0px 0px 3px #FE5C5C;
-    font-weight: bold;
-  }
-}
-
-#try_again_btn:hover{
-  animation: try_again_btn_hover 0.3s ease-in-out forwards;
+  color: #afb2bc;
 }
 
 .animated {
@@ -578,7 +572,7 @@ body {
 }
 
 #intelligo-logo-center-a {
-    fill: #4BD7C8;
+    fill: #333475;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     transform-box: fill-box;
@@ -588,7 +582,7 @@ body {
 }
 
 #intelligo-logo-center-c {
-    fill: #99E9DF;
+    fill: #afb2bc;
     -webkit-animation-name: intelligo-logo-center-c_Animation;
     animation-name: intelligo-logo-center-c_Animation;
     -webkit-transform-origin: 50% 50%;
@@ -598,39 +592,39 @@ body {
 }
 
 #intelligo-logo-r1-c1 {
-    fill: #4BD7C8;
+    fill: #333475;
 }
 
 #intelligo-logo-r1-c2 {
-    fill: #4BD7C8;
+    fill: #333475;
 }
 
 #intelligo-logo-r2-c1 {
-    fill: #99E9DF;
+    fill: #333475;
 }
 
 #intelligo-logo-r2-c2 {
-    fill: #99E9DF;
+    fill: #333475;
 }
 
 #intelligo-logo-r3-c1 {
-    fill: #4BD7C8;
+    fill: #333475;
 }
 
 #intelligo-logo-r3-c2 {
-    fill: #4BD7C8;
+    fill: #333475;
 }
 
 #intelligo-logo-r4-c1 {
-    fill: #99E9DF;
+    fill: #333475;
 }
 
 #intelligo-logo-r4-c2 {
-    fill: #99E9DF;
+    fill: #333475;
 }
 
 #intelligo-logo-center {
-    fill: #99E9DF;
+    fill: #afb2bc;
     -webkit-animation-name: intelligo-logo-center_Animation;
     animation-name: intelligo-logo-center_Animation;
     -webkit-transform-origin: 50% 50%;
@@ -640,7 +634,7 @@ body {
 }
 
 #intelligo-logo-center-b {
-    fill: #43c3b3;
+    fill: #333475;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     transform-box: fill-box;
@@ -699,7 +693,7 @@ body {
 }
 
 #intelligo-logo-bottom {
-    fill: #43c3b3;
+    fill: #afb2bc;
     -webkit-animation-name: intelligo-logo-bottom_Animation;
     animation-name: intelligo-logo-bottom_Animation;
     -webkit-transform-origin: 50% 50%;
@@ -709,7 +703,7 @@ body {
 }
 
 #intelligo-logo-top {
-    fill: #43c3b3;
+    fill: #afb2bc;
     -webkit-animation-name: intelligo-logo-top_Animation;
     animation-name: intelligo-logo-top_Animation;
     -webkit-transform-origin: 50% 50%;
