@@ -22,8 +22,7 @@ height: 100%;
 }
 
 div{
-  position: absolute;;
-  top:20px;
+  position: absolute;
   left:0px;
 }
 
@@ -36,17 +35,13 @@ body{
 
 .start_game_menu{
   position: absolute;
-  width: 960px;
-  height: 720px;
-  left: 240px;
-  margin: auto;
-  background-color: #F0F0F0;
-  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #12172e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: -1px 15px 30px -12px gray;
   z-index: 1;
 }
 
@@ -56,26 +51,11 @@ p{
 
 #start_game_btn{
   margin-top: 10px;
-  border: 2px solid #016995;
+  border: 2px solid #e61e1e;
   height: 50px;
   width: 150px;
   font-size: 20px;
   background-color: transparent;
-  color: #016995
-}
-@keyframes btn_hover{
-  from{
-  }
-  to{
-    box-shadow: 0px 0px 0px 1px #016995;
-    width: 50px;
-    border-radius:50%;
-    background-color: #016995;
-    color: white;
-  }
-}
-#start_game_btn:hover{
-  animation: btn_hover 0.3s ease-in-out forwards;
 }
 
 .end_game_menu{
@@ -102,6 +82,15 @@ p{
   align-items: center;
   box-shadow: -1px 15px 30px -12px gray;
   z-index: 1;
+}
+#particles-js .particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
+}
+
+#particles-js .particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
 }
 
 #try_again_btn{
