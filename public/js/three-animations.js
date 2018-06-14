@@ -75,7 +75,7 @@ function init() {
 
   // Create a sphere geometry with materials and Mesh
   // var geometry = new THREE.TetrahedronGeometry( 95, 3);
-  var geometry = new THREE.TetrahedronGeometry(13, 5);
+  var geometry = new THREE.TetrahedronGeometry(13, 1);
   var material = new THREE.MeshPhongMaterial({
     color: 0x33d6ff,
     shininess:0,

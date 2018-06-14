@@ -23,7 +23,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   });
 }
 
-var colors = new tracking.ColorTracker();
+var colors = new tracking.ColorTracker(['magenta']);
 colors.setMinDimension(5);
 colors.setMinGroupSize(10)
 colors.on('track', function(event) {
