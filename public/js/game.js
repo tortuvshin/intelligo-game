@@ -23,7 +23,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   });
 }
 
-var colors = new tracking.ColorTracker();
+var colors = new tracking.ColorTracker(['magenta']);
 colors.setMinDimension(5);
 colors.setMinGroupSize(10)
 colors.on('track', function(event) {
@@ -79,7 +79,6 @@ var update = () => {
 
   renderImage();
   colDetection();
-  // drawBricks();
 
 
   //DEBUGGING:
@@ -89,7 +88,7 @@ var update = () => {
 
 // RENDERS THE IMAGE
 var renderImage = ()  => {
-  context.drawImage(video, 0, 0, 960, 720);
+  context.drawImage(video, 0, 0, 920, 760);
   context.restore();
 }
 

@@ -4,12 +4,15 @@
 }
 
 html, body{
-height: 100%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
+
 #canvas{
   transform: rotateY(180deg);
   position: absolute;
-  left: 240px;
+  left: 300px;
   top: 0px;
   box-shadow: -1px 15px 30px -12px gray;
 }
@@ -22,140 +25,89 @@ height: 100%;
 }
 
 div{
-  position: absolute;;
-  top:20px;
+  position: absolute;
   left:0px;
 }
 
 body{
-  height: 1px;
-  background: #74ebd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #74ebd5, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-@keyframes logo{
-  0% {
-    stroke-dashoffset: 1400;
-    opacity: 0;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    opacity: 1;
-  }
+  background-color: #302575; /* fallback for old browsers */
 }
 
 .start_game_menu{
   position: absolute;
-  width: 960px;
-  height: 720px;
-  left: 240px;
-  margin: auto;
-  background-color: #F0F0F0;
-  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #302575;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: -1px 15px 30px -12px gray;
   z-index: 1;
 }
 
-.st0{
-  fill: none;
-  stroke: url(#linear);
-  stroke-miterlimit: 10;
-  stroke-width: 10px;
-
-  stroke-dasharray: 1400;
-  stroke-dashoffset: 0;
-  animation: logo 3s ease-in-out forwards;
+.start_game_menu h1 {
+  color: #afb2bc;
 }
 
-#line1{
-  stroke: #0a5
+.start_game_menu p {
+  color: #afb2bc;
 }
-#line2{
-  stroke: #05a
-}
-#line3{
-  stroke: #05a
-}
+
 p{
   font-size: 20px;
 }
 
 #start_game_btn{
   margin-top: 10px;
-  border: 2px solid #016995;
+  border: 2px solid #afb2bc;
   height: 50px;
   width: 150px;
   font-size: 20px;
+  color: #afb2bc;
   background-color: transparent;
-  color: #016995
-}
-@keyframes btn_hover{
-  from{
-  }
-  to{
-    box-shadow: 0px 0px 0px 1px #016995;
-    width: 50px;
-    border-radius:50%;
-    background-color: #016995;
-    color: white;
-  }
-}
-#start_game_btn:hover{
-  animation: btn_hover 0.3s ease-in-out forwards;
 }
 
 .end_game_menu{
-  /*background-color: #F0F0F0;
-  width: 960px;
-  height: 720px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -1px 15px 30px -12px gray;*/
-
   position: absolute;
-  width: 960px;
-  height: 720px;
-  left: 240px;
-  margin: auto;
-  background-color: #F0F0F0;
-  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #333475;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: -1px 15px 30px -12px gray;
   z-index: 1;
 }
 
+.end_game_menu h1 {
+  color: #afb2bc;
+}
+
+.end_game_menu h2 {
+  color: #afb2bc;
+}
+
+.end_game_menu p {
+  color: #afb2bc;
+}
+
+#particles-start .particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
+}
+
+#particles-end .particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
+}
+
 #try_again_btn{
-  border: 2px solid #FE5C5C;
+  border: 2px solid #afb2bc;
   height: 40px;
   width: 150px;
   font-size: 20px;
   background-color: transparent;
-  color: #FE5C5C
-}
-
-@keyframes try_again_btn_hover{
-  from{
-
-  }
-  to{
-    box-shadow: 0px 0px 0px 3px #FE5C5C;
-    font-weight: bold;
-  }
-}
-
-#try_again_btn:hover{
-  animation: try_again_btn_hover 0.3s ease-in-out forwards;
+  color: #afb2bc;
 }
 
 .animated {
@@ -255,4 +207,542 @@ body {
   padding-left: 15px;
   text-shadow: 15px 15px 9px rgba(0, 0, 0, 0.1);
   font-weight: bold;
+}
+
+
+@-webkit-keyframes intelligo-logo-r3_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    98.89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-r3_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    98.89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-r1_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    81.11% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-r1_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    81.11% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-r2_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    81.11% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-r2_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    81.11% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-r4_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    58.89% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-r4_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    58.89% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-top_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    48.89% {
+        opacity: 0;
+    }
+    58.89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-top_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    48.89% {
+        opacity: 0;
+    }
+    58.89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-bottom_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    48.89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-bottom_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    48.89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-center-b_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-center-b_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-center_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-center_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-center-a_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-center-a_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes intelligo-logo-center-c_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes intelligo-logo-center-c_Animation {
+    0% {
+        opacity: 1;
+    }
+    1.11% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#intelligo-logo * {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+#intelligo-logo-center-a {
+    fill: #333475;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-animation-name: intelligo-logo-center-a_Animation;
+    animation-name: intelligo-logo-center-a_Animation;
+    opacity: 1;
+}
+
+#intelligo-logo-center-c {
+    fill: #afb2bc;
+    -webkit-animation-name: intelligo-logo-center-c_Animation;
+    animation-name: intelligo-logo-center-c_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-r1-c1 {
+    fill: #333475;
+}
+
+#intelligo-logo-r1-c2 {
+    fill: #333475;
+}
+
+#intelligo-logo-r2-c1 {
+    fill: #333475;
+}
+
+#intelligo-logo-r2-c2 {
+    fill: #333475;
+}
+
+#intelligo-logo-r3-c1 {
+    fill: #333475;
+}
+
+#intelligo-logo-r3-c2 {
+    fill: #333475;
+}
+
+#intelligo-logo-r4-c1 {
+    fill: #333475;
+}
+
+#intelligo-logo-r4-c2 {
+    fill: #333475;
+}
+
+#intelligo-logo-center {
+    fill: #afb2bc;
+    -webkit-animation-name: intelligo-logo-center_Animation;
+    animation-name: intelligo-logo-center_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-center-b {
+    fill: #333475;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-animation-name: intelligo-logo-center-b_Animation;
+    animation-name: intelligo-logo-center-b_Animation;
+    opacity: 1;
+}
+
+#intelligo-logo-center-a_r1Qk_ay-m {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+#intelligo-logo-center-a_SkwrKpJ-X {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+#intelligo-logo-center-a_HJa6FT1bm {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+#intelligo-logo-r2 {
+    -webkit-animation-name: intelligo-logo-r2_Animation;
+    animation-name: intelligo-logo-r2_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-center-a_HJ1b5akbQ {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+#intelligo-logo-center-b_ryNOh61bX {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#intelligo-logo-bottom {
+    fill: #afb2bc;
+    -webkit-animation-name: intelligo-logo-bottom_Animation;
+    animation-name: intelligo-logo-bottom_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-top {
+    fill: #afb2bc;
+    -webkit-animation-name: intelligo-logo-top_Animation;
+    animation-name: intelligo-logo-top_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-r4 {
+    -webkit-animation-name: intelligo-logo-r4_Animation;
+    animation-name: intelligo-logo-r4_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-top_SJzqQ0kZ7 {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: scale(0.5, 1);
+    transform: scale(0.5, 1);
+}
+
+#intelligo-logo-r1 {
+    -webkit-animation-name: intelligo-logo-r1_Animation;
+    animation-name: intelligo-logo-r1_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+#intelligo-logo-r3 {
+    -webkit-animation-name: intelligo-logo-r3_Animation;
+    animation-name: intelligo-logo-r3_Animation;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 1;
 }
