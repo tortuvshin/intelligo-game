@@ -1,21 +1,21 @@
 # Intelligo game
 
-Augmented reality тоглоом
+Augmented reality and Virtual reality game development repository.
 
 | [Development][] | [Built with][] | [Authors][] | [Contributors][] | [License][] |
 |---|---|---|---|---|
 
 ## Development
 
-[Nodejs download](https://nodejs.org/en/download/)
-
-[Git download](https://git-scm.com/download/win)
+[Nodejs download](https://nodejs.org/en/download/) and install.
+ 
+[Git download](https://git-scm.com/download/win) and install.
 
 Clone repository `git clone https://github.com/tortuvshin/intelligo-game.git`
 
-`npm install`
+Install dependencies `npm install`
 
-`node app.js` 
+Start up your game by running node `node app.js` 
 
 Web browser [this link](http://localhost:5000) to test the game.
 
