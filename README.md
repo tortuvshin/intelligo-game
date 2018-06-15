@@ -39,7 +39,7 @@ or translating any document here to your language. [Find more information in CON
 
 ## License
 
-Intelligo game is open-sourced software licensed under the [MIT license](LICENSE.md).
+Intelligo game is open-sourced software licensed under the [MIT](LICENSE).
 
 **[⬆ back to top](#intelligo-game)**
 
