@@ -2,28 +2,49 @@
 
 Augmented reality тоглоом
 
-## Ажиллуулах заавар
+| [Development][] | [Built with][] | [Authors][] | [Contributors][] | [License][] |
+|---|---|---|---|---|
 
-Nodejs-ийн сүүлийн хувилбар татаж суулгах [холбоос](https://nodejs.org/en/download/)
+## Development
 
-Git суулгах [холбоос](https://git-scm.com/download/win)
+[Nodejs download](https://nodejs.org/en/download/)
 
-Тоглоомын эх кодыг `git clone https://github.com/tortuvshin/intelligo-game.git` командаар татаж авна.
+[Git download](https://git-scm.com/download/win)
 
-`intelligo-game` хавтасруугаа орж `npm install` командаар шаардлагатай сангуудаа татаж суулгана.
+Clone repository `git clone https://github.com/tortuvshin/intelligo-game.git`
 
-Command prompt дээр `node app.js` гэсэн команд бичиж програмаа ажиллуулна.
+`npm install`
 
-Вэб хөтөчөө нээж [энэ холбоос](http://localhost:5000) дээр програмаа шалгана.
+`node app.js` 
 
-## Ашигласан технологиуд
+Web browser [this link](http://localhost:5000) to test the game.
+
+## Built with
 
 * [Node.js](https://nodejs.org/en/download/)
 * [Tracking.js](https://trackingjs.com/) 
 * [Three.js](https://threejs.org/)
 
-## Хөгжүүлэгчид
+## Authors
 
-* **Doljinsuren Enkhbayar**
-* **Turtuvshin Byambaa**
+[![Enkhbayar Doljinsuren](https://avatars1.githubusercontent.com/u/23227403?s=80)](https://github.com/doljko) | 
+[![Turtuvshin Byambaa](https://avatars0.githubusercontent.com/u/12738721?s=80)](https://github.com/tortuvshin)
+---|---
+[Doljinsuren](https://github.com/doljko) | [Turtuvshin](https://github.com/tortuvshin) 
 
+## Contributors
+
+You may contribute in several ways like creating new features, fixing bugs, improving documentation and examples
+or translating any document here to your language. [Find more information in CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Intelligo game is open-sourced software licensed under the [MIT license](LICENSE.md).
+
+**[⬆ back to top](#intelligo-game)**
+
+[Development]:#development
+[Built with]:#built-with
+[Authors]:#authors
+[Contributors]:#contributors
+[License]:#license
