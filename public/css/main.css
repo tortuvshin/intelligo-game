@@ -12,7 +12,7 @@ html, body{
 #canvas{
   transform: rotateY(180deg);
   position: absolute;
-  left: 300px;
+  left: 280px;
   top: 0px;
   box-shadow: -1px 15px 30px -12px gray;
 }
