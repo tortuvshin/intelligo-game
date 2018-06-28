@@ -1,0 +1,6 @@
+{
+  "name": "INTELLIGO Game",
+  "description": "Augmented reality and Virtual reality game",
+  "repository": "https://github.com/tortuvshin/intelligo-game.git",
+  "keywords": ["node", "express", "game"]
+}

@@ -8,29 +8,33 @@ Augmented reality and Virtual reality game development repository.
 ## Development
 
 [Nodejs download](https://nodejs.org/en/download/) and install.
- 
+
 [Git download](https://git-scm.com/download/win) and install.
 
 Clone repository `git clone https://github.com/tortuvshin/intelligo-game.git`
 
 Install dependencies `npm install`
 
-Start up your game by running node `node app.js` 
+Start up your game by running node `node app.js`
 
 Web browser [this link](http://localhost:5000) to test the game.
+
+## Deploy
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Built with
 
 * [Node.js](https://nodejs.org/en/download/)
-* [Tracking.js](https://trackingjs.com/) 
+* [Tracking.js](https://trackingjs.com/)
 * [Three.js](https://threejs.org/)
 
 ## Authors
 
-[![Enkhbayar Doljinsuren](https://avatars1.githubusercontent.com/u/23227403?s=80)](https://github.com/doljko) | 
+[![Enkhbayar Doljinsuren](https://avatars1.githubusercontent.com/u/23227403?s=80)](https://github.com/doljko) |
 [![Turtuvshin Byambaa](https://avatars0.githubusercontent.com/u/12738721?s=80)](https://github.com/tortuvshin)
 ---|---
-[Doljinsuren](https://github.com/doljko) | [Turtuvshin](https://github.com/tortuvshin) 
+[Doljinsuren](https://github.com/doljko) | [Turtuvshin](https://github.com/tortuvshin)
 
 ## Contributors
 
