@@ -49,6 +49,11 @@ colors.on('track', function(event) {
 window.onload = function() {
   tracking.track('#my_velocityvideo', colors, {camera: true});
   setInterval(update, updateRate); // RUN THE RENDER FUNCTION EVERY 50ms
+
+  if(IsFullScreenCurrently())
+        GoOutFullscreen();
+    else
+        GoInFullscreen($("#game-body").get(0));
 }
 
 //THE UPDATE SCREEN FUNCTION
@@ -156,3 +161,45 @@ function gameOver(){
   document.getElementsByClassName("score-container")[0].style.display = "none"
   document.getElementById('result_score').textContent = score;
 }
+
+/* Get into full screen */
+function GoInFullscreen(element) {
+    if(element.requestFullscreen)
+        element.requestFullscreen();
+    else if(element.mozRequestFullScreen)
+        element.mozRequestFullScreen();
+    else if(element.webkitRequestFullscreen)
+        element.webkitRequestFullscreen();
+    else if(element.msRequestFullscreen)
+        element.msRequestFullscreen();
+}
+
+/* Get out of full screen */
+function GoOutFullscreen() {
+    if(document.exitFullscreen)
+        document.exitFullscreen();
+    else if(document.mozCancelFullScreen)
+        document.mozCancelFullScreen();
+    else if(document.webkitExitFullscreen)
+        document.webkitExitFullscreen();
+    else if(document.msExitFullscreen)
+        document.msExitFullscreen();
+}
+
+/* Is currently in full screen or not */
+function IsFullScreenCurrently() {
+    var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+
+    // If no element is in full-screen
+    if(full_screen_element === null)
+        return false;
+    else
+        return true;
+}
+
+$("#start_game_btn").on('click', function() {
+    if(IsFullScreenCurrently())
+        GoOutFullscreen();
+    else
+        GoInFullscreen($("#element").get(0));
+});
