@@ -6,7 +6,6 @@ Augmented reality and Virtual reality game development repository.
 |---|---|---|---|---|---|---|
 
 ## Requirements
--------------
 
 - [MongoDB](https://www.mongodb.org/downloads)
 - [Node.js 8.0+](http://nodejs.org)
