@@ -18,7 +18,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 app.get('/', function(req, res) {
-    res.render('game.ejs');
+    res.render('user.ejs');
 });
 app.listen(app.get('port'), () => {
     console.log('Intelligo game is listening on port', app.get('port'));
