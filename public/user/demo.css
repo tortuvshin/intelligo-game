@@ -11,17 +11,17 @@
    transform: scale(1.5);
 }
 
-background-page {
-	width: 100wh;
-	height: 90vh;
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+body {
+    width: 100wh !important;
+    height: 90vh !important;
+    color: #fff !important;
+    background: linear-gradient(-45deg,
+#D420FD,#83F4FC) !important;
+    background-size: 400% 400% !important;
+    -webkit-animation: Gradient 15s ease infinite !important;
+    -moz-animation: Gradient 15s ease infinite !important;
+    animation: Gradient 15s ease infinite !important;
 }
-
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
