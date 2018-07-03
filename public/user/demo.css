@@ -93,9 +93,50 @@ body {
     letter-spacing: 40px;
     margin-bottom: -40px;
   }
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  line-height: 200px;
+  border-radius: 50%; /* the magic */
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto 40px;
+  background-color: white;
+  margin-left: 162px;
+  margin-top: 52px;
+}
+input{
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 2;
+    margin-left: 271px;
+    margin-top: 52px;
+    display: inline-block;
   }
-
-.bubble{
-  width: 100% !important;
-  float: left !important;
+input:focus, input:valid{
+    outline: none;
+    border-bottom: 1px solid #00aced;
+  }
+  table{
+     border: 1px solid black;
+     border-collapse: collapse;
+     width: 100%;
+     margin-left: 630px;
+    
+  }
+  th{
+    text-align: right;
 }
