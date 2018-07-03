@@ -84,7 +84,6 @@ body {
   letter-spacing: 8px;
   margin-bottom: 20px;
 }
-
 @keyframes text{
   0%{
     color: #6699ff;
@@ -94,4 +93,9 @@ body {
     letter-spacing: 40px;
     margin-bottom: -40px;
   }
+  }
+
+.bubble{
+  width: 100% !important;
+  float: left !important;
 }
