@@ -163,7 +163,7 @@ body {
     margin-left: 80px;
     color: dark;
 }
-  img {
+img{
       width: 40px;
       height: 40px;
       margin: 15px 20px;
@@ -171,7 +171,10 @@ body {
     }
 
   .result{
-    margin-left: 163px;
-    margin-top: -95px;
+    margin-left: 174px;
+    margin-top: -98px;
   }
-  .awar
+  .award{
+    margin-left: 349px;
+margin-top: -59px;
+  }
