@@ -82,7 +82,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    animation: text 5s 1;
+    animation: text 2s 1;
     width: 100%;
     color: white;
     font-size: 100px;
