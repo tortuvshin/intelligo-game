@@ -1,23 +1,22 @@
-.activity-slot:hover  {
-  box-shadow: 0px 0px 150px #000000;
-   z-index: 2;
-   -webkit-transition: all 200ms ease-in;
-   -webkit-transform: scale(1.5);
-   -ms-transition: all 200ms ease-in;
-   -ms-transform: scale(1.5);
-   -moz-transition: all 200ms ease-in;
-   -moz-transform: scale(1.5);
-   transition: all 200ms ease-in;
-   transform: scale(1.5);
+.activity-slot:hover {
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
 }
 
 body {
-  overflow: auto;
+    overflow: auto;
     width: 100wh !important;
     height: 90vh !important;
     color: #fff !important;
-    background: linear-gradient(-45deg,
-#0086b3 ,#0086b3) !important;
+    background: linear-gradient(-45deg, #0086b3, #0086b3) !important;
     background-size: 400% 400% !important;
     -webkit-animation: Gradient 15s ease infinite !important;
     -moz-animation: Gradient 15s ease infinite !important;
@@ -30,109 +29,116 @@ body {
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .ml2 {
-  font-weight: 900;
-  font-size: 3.5em;
+    font-weight: 900;
+    font-size: 3.5em;
 }
 
 .ml2 .letter {
-  display: inline-block;
-  line-height: 1em;
+    display: inline-block;
+    line-height: 1em;
 }
-.secondary-title{
 
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,50%);
-  animation:  text 5s 1;
-  width: 100%;
-  color: white;
-  font-size: 100px;
-  font-weight: 800;
-  letter-spacing: 8px;
-  margin-bottom: 20px;
+.secondary-title {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    animation: text 5s 1;
+    width: 100%;
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
 }
-@keyframes text{
-  0%{
-    color: #6699ff;
-    margin-bottom: -40px;
-  }
-50%{
-    letter-spacing: 40px;
-    margin-bottom: -40px;
-  }
+
+@keyframes text {
+    0% {
+        color: #6699ff;
+        margin-bottom: -40px;
+    }
+    50% {
+        letter-spacing: 40px;
+        margin-bottom: -40px;
+    }
 }
+
 .circle {
-  width: 180px;
-  height: 180px;
-  line-height: 200px;
-  border-radius: 50%; /* the magic */
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  text-align: center;
-  color: white;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0 auto 40px;
-  background-color: white;
-  margin-left: 162px;
-  margin-top: 52px;
+    width: 180px;
+    height: 180px;
+    line-height: 200px;
+    border-radius: 50%;
+    /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto 40px;
+    background-color: white;
+    margin-left: 162px;
+    margin-top: 52px;
 }
+
 .table {
-  display: table;
-  width: 100%;
-  position: absolute;
-  height: 100%;
+    display: table;
+    width: 100%;
+    position: absolute;
+    height: 100%;
 }
+
 .table-cell {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
-.leader{
-  margin-left: 100%;
-     margin-top: 30px;
+
+.leader {
+    margin-left: 100%;
+    margin-top: 30px;
 }
-.leader li  {
+
+.leader li {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
@@ -144,54 +150,58 @@ body {
     margin-bottom: 10px;
     width: 640px;
     height: 71px;
+}
 
-    box-shadow: 0 5px 5px rgba(black, 0.1);
-    }
-    h2 {
-      margin: 87px;
-      display: block;
-      margin: 0;
-      font-size: 18px;
-      text
-      font-weight: 300;
-      padding-right: 20px;
-    }
-    h2.name {
-      text-align: center;
-      margin-top: -56px;
-      margin-bottom: 100px;
-      margin-right: 150px;
-      margin-left: 80px;
-      style="word-wrap: break-word; width: 100px;
-  }
-  h2.number {
+h2 {
+    margin: 87px;
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    text font-weight: 300;
+    padding-right: 20px;
+}
+
+h2.name {
     text-align: center;
-      margin-top: -54px;
+    margin-top: -56px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    style="word-wrap: break-word; width: 100px;
+
+}
+
+h2.number {
+    text-align: center;
+    margin-top: -54px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
     color: dark;
 }
-img{
-      width: 40px;
-      height: 40px;
-      margin: 15px 20px;
-      border-radius: 100%;
-    }
 
-  .result{
+img {
+    width: 40px;
+    height: 40px;
+    margin: 15px 20px;
+    border-radius: 100%;
+}
+
+.result {
     margin-left: 254px;
     margin-top: -98px;
-  }
-  .award{
-    margin-left: 527px;
-margin-top: -59px;
-  }
-  h1 {
-  font-size: 60px;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-.board{
+
+.award {
+    margin-left: 527px;
+    margin-top: -59px;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.board {
     margin-top: 68px;
 }
