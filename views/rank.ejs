@@ -9,65 +9,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="icon" type="image/png" sizes="32x32" href="img/star.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/star.png">
-    <link rel="manifest" href="http://buildyourbestday.participaction.com/assets/images/favicons/manifest.json">
-    <link rel="mask-icon" href="http://buildyourbestday.participaction.com/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="star.png">
+  <link rel="shortcut icon" href="star.png">
     <div id="particles-js"></div>
     <script type="text/javascript" src="particle.js"></script>
     <script type="text/javascript" src="app1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WJC9DG');
-    </script>
+
 </head>
-<!-- Google Tag Manager -->
 
-<!-- End Google Tag Manager -->
-
-<body data-gr-c-s-loaded="true">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript aria-hidden="true">
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJC9DG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-
-
-    <script type="text/javascript" id="">
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        gtag("js", new Date);
-        gtag("config", "DC-4114252");
-    </script>
-
-    <iframe height="0" width="0" style="display: none; visibility: hidden;" src="/user/activityi.html"></iframe>
-    <script type="text/javascript" id="">
-        gtag("event", "conversion", {
-            allow_custom_scripts: !0,
-            send_to: "DC-4114252/invmedia/hikn8gz5+standard"
-        });
-    </script>
-    <noscript>
-        <img src="https://ad.doubleclick.net/ddm/activity/src=4114252;type=invmedia;cat=hikn8gz5;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" alt="">
-    </noscript>
-
-
-<div  class="board">  <h1><center><b>Leaderboard</b></center></h1></div> 
-<div class="background">
+<body data-gr-c-s-loaded="true" id="particles-rank">
+<div  class="board">  <h1><center><b>Leaderboard</b></center></h1></div>
+<div class="background" >
     <div class="table-cell">
       <ul class="leader">
         <li>
@@ -138,41 +90,12 @@
       </ul>
     </div>
 
-    <div style="display: none; visibility: hidden;">
-        <script>
-            ! function(b, e, f, g, a, c, d) {
-                b.fbq || (a = b.fbq = function() {
-                    a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
-                }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d))
-            }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-            fbq("init", "544000075984492");
-            fbq("track", "PageView");
-        </script>
-        <noscript></noscript>
-        // Wrap every letter in a span
-$('.ml2').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-});
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml2 .letter',
-    scale: [4,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: function(el, i) {
-      return 70*i;
-    }
-  }).add({
-    targets: '.ml2',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-
-    </div>
 </body>
+<script src="/js/particles.js"></script>
+<script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-rank', 'js/rank-particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
 </html>
