@@ -123,7 +123,7 @@ body {
 }
 .leader{
   margin-left: 100%;
-    margin-top: 20%;
+     margin-top: 30px;
 }
 .leader li  {
     list-style-type: none;
@@ -135,7 +135,7 @@ body {
     border-radius: 5px;
     height: 70px;
     margin-bottom: 10px;
-    width: 554px;
+    width: 640px;
     height: 71px;
 
     box-shadow: 0 5px 5px rgba(black, 0.1);
@@ -173,11 +173,11 @@ img{
     }
 
   .result{
-    margin-left: 174px;
+    margin-left: 254px;
     margin-top: -98px;
   }
   .award{
-    margin-left: 349px;
+    margin-left: 527px;
 margin-top: -59px;
   }
   h1 {
