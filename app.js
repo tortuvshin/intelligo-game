@@ -29,6 +29,7 @@ app.get('/game', function(req, res) {
 app.get('/rank', function(req, res) {
     res.render('rank.ejs');
 });
+
 app.listen(app.get('port'), () => {
     console.log('Intelligo game is listening on port', app.get('port'));
 });
