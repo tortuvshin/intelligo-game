@@ -4,6 +4,7 @@ const express = require( 'express'),
       expressLayouts = require('express-ejs-layouts'),
       path           = require('path'),
       morgan         = require('morgan'),
+      mongoose       = require('mongoose'),
       bodyParser     = require('body-parser');
 
 const app = express();
@@ -18,17 +19,10 @@ app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
-app.get('/', function(req, res) {
-    res.render('user.ejs');
-});
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/test');
 
-app.get('/game', function(req, res) {
-    res.render('game.ejs');
-});
-
-app.get('/rank', function(req, res) {
-    res.render('rank.ejs');
-});
+require('./routes/routes.js')(app);
 
 app.listen(app.get('port'), () => {
     console.log('Intelligo game is listening on port', app.get('port'));
