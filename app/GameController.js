@@ -4,11 +4,11 @@ module.exports = {
 
   startGame(req, res) {
     res.render('start');
-  }
+  },
 
   playGame(req, res) {
     res.render('game');
-  }
+  },
 
   createPlayer(req, res){
     const player = new Player({
@@ -22,7 +22,7 @@ module.exports = {
       }
       res.send('Create new player...');
     });
-  }
+  },
 
   showLeader(req, res){
     Player.find({}, {created : 0}, {sort: {score: 1}}, function(err, players){
@@ -31,7 +31,7 @@ module.exports = {
         res.send('Players not found!');
       }
 
-      res.render('rank', {
+      res.render('leader', {
         players: players,
         success: req.flash('success')
       });
