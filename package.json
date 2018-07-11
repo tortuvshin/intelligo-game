@@ -23,6 +23,7 @@
     "express-ejs-layouts": "^2.2.0",
     "express-session": "^1.14.2",
     "express-validator": "^2.20.8",
+    "mongoose": "^5.2.2",
     "morgan": "^1.9.0",
     "npm": "^6.1.0",
     "path": "^0.12.7",
