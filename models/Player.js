@@ -4,7 +4,6 @@ const mongoose = require('mongoose'),
 const playerSchema = new Schema({
   name: String,
   avatar: String,
-  avatar: String,
   score: Number,
   created: {
     type: Date,
