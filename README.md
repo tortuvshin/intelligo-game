@@ -21,6 +21,10 @@ Start up your game by running node `node app.js`
 
 Web browser [this link](http://localhost:5000) to test the game.
 
+Compile the sass `npm run build-css`
+
+Watch the sass `npm run watch-css`
+
 ## Deploy
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
