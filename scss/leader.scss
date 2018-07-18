@@ -157,7 +157,7 @@ h2 {
     display: block;
     margin: 0;
     font-size: 18px;
-    text font-weight: 300;
+    font-weight: 300;
     padding-right: 20px;
 }
 
@@ -167,8 +167,6 @@ h2.name {
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
-    style="word-wrap: break-word; width: 100px;
-
 }
 
 h2.number {
@@ -204,4 +202,10 @@ h1 {
 
 .board {
     margin-top: 68px;
+}
+
+.background-number svg {
+  z-index: 10;
+  width: 80%;
+  margin: 10%;
 }

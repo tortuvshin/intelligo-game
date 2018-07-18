@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/demo', { useNewUrlParser: true });
+mongoose.connect('mongodb://127.0.0.1:27017/intelligo', { useNewUrlParser: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

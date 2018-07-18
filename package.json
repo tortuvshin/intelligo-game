@@ -12,7 +12,9 @@
     "url": "git+https://github.com/tortuvshin/intelligo-game.git"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -33,13 +35,7 @@
     "node_modules"
   ],
   "devDependencies": {
-    "css-loader": "^0.28.11",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.12.2",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.3"
   }
 }
