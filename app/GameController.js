@@ -10,6 +10,26 @@ module.exports = {
     res.render('game');
   },
 
+  demoData(req, res){
+    const players = [
+      { name: "Doljko", avatar: "demo/url.jpg", score: 1233 },
+      { name: "Toroo", avatar: "demo/url.jpg", score: 456 },
+      { name: "Ganaa", avatar: "demo/url.jpg", score: 233 },
+      { name: "Demo", avatar: "demo/url.jpg", score: 123 },
+      { name: "Naraa", avatar: "demo/url.jpg", score: 545 },
+      { name: "Boldoo", avatar: "demo/url.jpg", score: 13 }
+    ];
+
+    Player.remove({}, () => {
+      for (player of players) {
+        const newPlayer = new Player(player);
+        newPlayer.save();
+      }
+    });
+
+    res.send('Players demo data seeded!');
+  },
+
   createPlayer(req, res){
     const player = new Player({
       name: req.body.name,
@@ -25,15 +45,14 @@ module.exports = {
   },
 
   showLeader(req, res){
-    Player.find({}, {created : 0}, {sort: {score: 1}}, function(err, players){
+    Player.find({}, {created : 0}, {sort: {score: -1}}, function(err, players){
       if (err) {
         res.status(404);
         res.send('Players not found!');
       }
 
       res.render('leader', {
-        players: players,
-        success: req.flash('success')
+        players: players
       });
     });
   }

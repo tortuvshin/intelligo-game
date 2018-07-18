@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="icon" type="image/png" sizes="32x32" href="img/star.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/star.png">
-  <link rel="shortcut icon" href="star.png">
+    <link rel="shortcut icon" href="star.png">
     <div id="particles-js"></div>
     <script type="text/javascript" src="particle.js"></script>
     <script type="text/javascript" src="app1.js"></script>
@@ -21,71 +21,15 @@
 <div class="background" >
     <div class="table-cell">
       <ul class="leader">
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name"><font color="#000000">Drew Vosburg    </h2>
-            <h2 class="result">9,735</h2>
-              <img class="award" src="img/award.png" />
-        </li>
 
-        <li>
-          <img src="https://lh6.googleusercontent.com/-566ZpvrYxRo/AAAAAAAAAAI/AAAAAAAAAAA/kZk-O1q__A0/s128-c-k/photo.jpg" />
-          <h2 class="name">Jesse Nelson </h2>
-          <h2 class="result"> 8,364 </h2>
-            <img class="award" src="img/award.png" />
-
-        </li>
-
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Joel Bullis </h2>
-            <h2 class="result">7,621</h2>
-              <img class="award" src="img/award.png" />
-        </li>
-
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg" />
-          <h2 class="name">Carmen SanDiego </h2>
-            <h2 class="result">10,621</h2>
-              <img class="award" src="img/award.png" />
-        </li>
-
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Charles Barkley </h2>
-          <h2 class="result">2,651</h2>
-          <img class="award" src="img/award.png" />
-        </li>
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Charles Barkley </h2>
-          <h2 class="result">2,651</h2>
-          <img class="award" src="img/award.png" />
-        </li>
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Charles Barkley </h2>
-          <h2 class="result">2,651</h2>
-          <img class="award" src="img/award.png" />
-        </li>
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Charles Barkley</h2>
-          <h2 class="result">2,651</h2>
-          <img class="award" src="img/award.png" />
-        </li>
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Charles Barkley </h2>
-          <h2 class="result">2,651</h2>
-          <img class="award" src="img/award.png" />
-        </li>
-        <li>
-          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
-          <h2 class="name">Charles Barkley </h2>
-          <h2 class="result">2,651</h2>
-          <img class="award" src="img/award.png" />
-        </li>
+        <% for (var player of players) { %>
+          <li>
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" />
+            <h2 class="name"><font color="#000000"><%= player.name %></h2>
+              <h2 class="result"><%= player.score %></h2>
+                <img class="award" src="img/award.png" />
+          </li>
+       <% } %>
       </ul>
     </div>
 

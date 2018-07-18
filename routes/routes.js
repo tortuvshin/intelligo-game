@@ -6,6 +6,8 @@ module.exports = function(app){
 
   app.get('/play', game.playGame);
 
+  app.get('/seed', game.demoData);
+
   app.get('/leader',  game.showLeader);
 
 }

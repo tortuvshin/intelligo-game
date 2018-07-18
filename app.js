@@ -25,7 +25,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/demo', { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  // we're connected!
+  console.log("Database connected");
 });
 
 require('./routes/routes.js')(app);
