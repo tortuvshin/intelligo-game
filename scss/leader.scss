@@ -23,11 +23,6 @@ body {
     animation: Gradient 15s ease infinite !important;
 }
 
-.particles-js-canvas-el {
-    position: absolute;
-    top: 0;
-}
-
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0% 50%
