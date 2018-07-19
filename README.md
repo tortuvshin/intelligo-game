@@ -1,5 +1,7 @@
 # Intelligo game
 
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tortuvshin/intelligo-game)
+
 Augmented reality and Virtual reality game development repository.
 
 | [Requirements][] | [Development][] | [Deploy][] | [Built with][] | [Authors][] | [Contributors][] | [License][] |
@@ -69,6 +71,10 @@ Watch the sass `npm run watch-css`
 * [Node.js](https://nodejs.org/en/download/)
 * [Tracking.js](https://trackingjs.com/)
 * [Three.js](https://threejs.org/)
+
+## Stack
+
+    <a frameborder="0" data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/fa1db692671993407846c876ff2148"/></a>    <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 
 ## Authors
 
