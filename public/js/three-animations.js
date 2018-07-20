@@ -280,5 +280,7 @@ document.getElementById("start_game_btn").addEventListener('click', function(){
   document.getElementsByClassName("game_screen")[0].style.display = "block";
   document.getElementsByClassName("score-container")[0].style.display = "block";
   var item = document.getElementById("fourth-text")
+
+  document.getElementById("score").style.visibility = "visible";
   item.className = "fourth-text"
 })

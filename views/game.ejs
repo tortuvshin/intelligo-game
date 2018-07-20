@@ -10,7 +10,6 @@
 <body id="game-body">
 
   <div class="score-container" style="display: none">
-    <h3 id="score" style="font-weight:bolder">Score: 0</h3>
     <h5>High Scores:</h5>
     <ol style="font-size:20px;padding: 10px">
       <li>Doljko: 992</li>
@@ -18,18 +17,20 @@
     </ol>
   </div>
 
-  <div class="game_screen">
+  <section class="game_screen">
     <div id="fourth-text" >READY?</div>
 
-    <!-- video used to render large image -->
     <video style="display: none" id="video" width="10" height="10" autoplay></video>
-    <!-- canvas where the video is rendered -->
-    <canvas id="canvas" width="920" height="760"></canvas>
-    <!-- video in which the tracking is done -->
-    <video id="my_velocityvideo" width="200" height="150" preload autoplay loop muted></video>
-  </div>
 
-  <div class="start_game_menu"  id="particles-start">
+    <canvas id="canvas" width="920" height="760"></canvas>
+
+    <video id="my_velocityvideo" width="200" height="150" preload autoplay loop muted></video>
+
+    <h3 id="score" style="font-weight:bolder">Score: 0</h3>
+
+  </section>
+
+  <section class="start_game_menu"  id="particles-start">
 
       <svg width="400px" height="400px"  version="1.1" id="intelligo-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
       <path d="M344.177,376.243H167.823c-17.709,0-32.065-14.356-32.065-32.065V167.824&#10;&#9;c0-17.709,14.356-32.065,32.065-32.065h176.355c17.709,0,32.065,14.356,32.065,32.065v176.355&#10;&#9;C376.242,361.887,361.886,376.243,344.177,376.243z" id="intelligo-logo-center-a"/>
@@ -62,19 +63,16 @@
     <h1 class="animated fadeInUp">INTELLIGO</h1>
     <p class="animated fadeInUp">Block game demo</p>
     <button id="start_game_btn" class="animated fadeInUp">Start Game</button>
-  </div>
+  </section>
 
-  <div class="end_game_menu" style="display:none" id="particles-end" >
+  <section class="end_game_menu" style="display:none" id="particles-end" >
     <h1>Game Over</h1>
     <h2><i class="fa fa-trophy" style="color:#afd2bc"></i> Score: <span id="result_score"></span></h2>
     <button id="try_again_btn">Try again</button>
-  </div>
+  </section>
 
+  <script src="/js/jquery-3.2.1.min.js"></script>
   <script src="/js/variables.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
   <script src="/js/game.js"></script>
 
 
