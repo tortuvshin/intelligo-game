@@ -1,3 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 #canvas{
   transform: rotateY(180deg);
   position: absolute;
@@ -13,9 +24,13 @@
   z-index: -1;
 }
 
-#game-body div{
+div{
   position: absolute;
   left:0px;
+}
+
+body{
+  background-color: #302575; /* fallback for old browsers */
 }
 
 .start_game_menu{
@@ -36,6 +51,10 @@
 
 .start_game_menu p {
   color: #afb2bc;
+}
+
+p{
+  font-size: 20px;
 }
 
 #start_game_btn{
@@ -70,6 +89,16 @@
 
 .end_game_menu p {
   color: #afb2bc;
+}
+
+#particles-start .particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
+}
+
+#particles-end .particles-js-canvas-el {
+    position: absolute;
+    z-index: -1;
 }
 
 #try_again_btn{
@@ -116,6 +145,11 @@
 .fadeInUp {
   animation-delay: 2s;
   animation-name: fadeInUp;
+}
+
+body {
+  font-size: 62.5%;
+  font-style: Arial;
 }
 
 .animation-box {
