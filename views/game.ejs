@@ -15,6 +15,16 @@
       <li>Doljko: 992</li>
       <li>Toroo: 532</li>
     </ol>
+    <!-- <% var counter=8;%>
+    <% for (var player of players) { %>
+      <% counter-=1.1;%>
+      <a-plane mixin="plane" position="0 <%- counter %> 0" color="#F16745">
+        <a-animation attribute="scale" from="1 0 1" to="1 1 1" dur="750" delay="500"
+                     fill="backwards"></a-animation>
+        <a-text value="<%- player.name %> <%- player.score %>" color="FAFAFA"></a-text>
+      </a-plane>
+
+    <% } %> -->
   </div>
 
   <section class="game_screen">
