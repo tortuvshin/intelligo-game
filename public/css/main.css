@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url("/fonts/Lobster-Regular/Lobster-Regular.eot");
+  src: url("/fonts/Lobster-Regular/Lobster-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Lobster-Regular/Lobster-Regular.woff") format("woff"), url("/fonts/Lobster-Regular/Lobster-Regular.ttf") format("truetype"), url("/fonts/Lobster-Regular/Lobster-Regular.svg#aller") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   padding: 0;
   margin: 0; }
 
 html, body {
+  font-family: Lobster-Regular, arial, sans-serif;
   height: 100%;
   width: 100%;
   overflow: hidden; }
@@ -38,17 +46,16 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1; }
-
-.start_game_menu h1 {
-  color: #afb2bc; }
-
-.start_game_menu p {
-  color: #afb2bc; }
+  .start_game_menu h1 {
+    color: #afb2bc; }
+  .start_game_menu p {
+    color: #afb2bc; }
 
 p {
   font-size: 20px; }
 
 #start_game_btn {
+  font-family: Lobster-Regular, arial, sans-serif;
   margin-top: 10px;
   border: 2px solid #afb2bc;
   height: 50px;
@@ -56,6 +63,8 @@ p {
   font-size: 20px;
   color: #afb2bc;
   background-color: transparent; }
+  #start_game_btn:hover {
+    cursor: pointer; }
 
 .end_game_menu {
   position: absolute;
@@ -121,7 +130,7 @@ p {
 
 body {
   font-size: 62.5%;
-  font-style: Arial; }
+  font-style: Lobster-Regular; }
 
 .animation-box {
   width: 75%;
