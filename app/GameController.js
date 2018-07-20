@@ -2,12 +2,17 @@ const Player = require('../models/Player');
 
 module.exports = {
 
-  startGame(req, res) {
-    res.render('start');
-  },
-
   playGame(req, res) {
-    res.render('game');
+    Player.find({}, {created : 0}, {sort: {score: -1}}, function(err, players){
+      if (err) {
+        res.status(404);
+        res.send('Players not found!');
+      }
+
+      res.render('game', {
+        players: players
+      });
+    });
   },
 
   demoData(req, res){
@@ -41,19 +46,6 @@ module.exports = {
         res.send('Error: '+err);
       }
       res.send('Create new player...');
-    });
-  },
-
-  showLeader(req, res){
-    Player.find({}, {created : 0}, {sort: {score: -1}}, function(err, players){
-      if (err) {
-        res.status(404);
-        res.send('Players not found!');
-      }
-
-      res.render('leader', {
-        players: players
-      });
     });
   }
 }
