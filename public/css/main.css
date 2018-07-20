@@ -101,6 +101,8 @@ p {
   font-size: 20px;
   background-color: transparent;
   color: #afb2bc; }
+  #try_again_btn:hover {
+    cursor: pointer; }
 
 .animated {
   animation-duration: 1s;
@@ -152,6 +154,39 @@ body {
   100% {
     opacity: 0%; } }
 
+.one-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 0s;
+  animation-duration: 1s; }
+
+.two-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 1s; }
+
+.three-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 2s;
+  animation-duration: 1s; }
+
 .fourth-text {
   font-size: 3.4rem;
   position: absolute;
@@ -161,15 +196,18 @@ body {
   color: #F0A3BE;
   animation-name: fadeInOut;
   animation-delay: 3s;
-  animation-duration: 3s; }
+  animation-duration: 1s; }
 
-#fourth-text {
+#fourth-text, #three-text, #two-text, #one-text {
   font-size: 80px;
   position: absolute;
-  top: 300px;
-  left: 550px;
+  top: 40%;
+  left: 49%;
   z-index: 3;
   opacity: 0; }
+
+#fourth-text {
+  left: 40% !important; }
 
 #score {
   position: absolute;
