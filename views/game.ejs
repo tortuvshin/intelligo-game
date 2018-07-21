@@ -52,11 +52,13 @@
     <h1>Game Over</h1>
     <h2><i class="fa fa-trophy" style="color:#afd2bc"></i> Score: <span id="result_score"></span></h2>
     <button id="try_again_btn">Try again</button>
+    <h2>Top players</h2>
     <ol style="font-size:20px;padding: 10px">
       <% for (var player of players) { %>
-        <li><p><%- player.name %></p>  <p><%- player.score %></p></li>
+        <li><p><%- player.name %></p><p><%- player.score %></p></li>
       <% } %>
     </ol>
+
   </section>
 
   <script src="/js/jquery-3.2.1.min.js"></script>

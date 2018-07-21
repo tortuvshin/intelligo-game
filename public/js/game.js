@@ -23,7 +23,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   });
 }
 
-var colors = new tracking.ColorTracker();
+var colors = new tracking.ColorTracker(["magenta"]);
 colors.setMinDimension(5);
 colors.setMinGroupSize(10)
 colors.on('track', function(event) {
@@ -82,8 +82,8 @@ var update = () => {
 
 
   //DEBUGGING:
-  // context.fillStyle='red';
-  // context.fillRect(paddle_x_position, paddle_y_position, paddle_width, paddle_height);
+  //context.fillStyle='red';
+  //context.fillRect(paddle_x_position, paddle_y_position, paddle_width, paddle_height);
 }
 
 // RENDERS THE IMAGE
@@ -139,7 +139,7 @@ function removeEntity(object) {
 }
 
 function updateScore (newScore){
-  document.getElementById("score").textContent = "Score: " + newScore;
+  document.getElementById("score").textContent = "Your score: " + newScore;
 }
 
 function updateSpeed () {
@@ -151,8 +151,9 @@ function updateSpeed () {
 function gameOver(){
   clearInterval(interval_id);
   gameHasStarted = false;
+
+  document.getElementById("score").style.visibility = "hidden";
   document.getElementsByClassName("end_game_menu")[0].style.display = "flex";
-  document.getElementsByClassName("game_screen")[0].style.display = "none"
   document.getElementsByClassName("score-container")[0].style.display = "none"
   document.getElementById('result_score').textContent = score;
 }
