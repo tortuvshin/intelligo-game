@@ -61,6 +61,7 @@ body{
   z-index: 1;
 
   h1 {
+    padding: 10px;
     color: #afb2bc;
   }
 
@@ -94,6 +95,7 @@ p{
   position: absolute;
   width: 100%;
   height: 100%;
+  padding-top: 10px;
   background-color: #333475;
   display: flex;
   flex-direction: column;
@@ -103,11 +105,15 @@ p{
 }
 
 .end_game_menu h1 {
+  padding: 10px;
   color: #afb2bc;
+  font-size: 50px;
 }
 
 .end_game_menu h2 {
   color: #afb2bc;
+  padding: 10px;
+  font-size: 30px;
 }
 
 .end_game_menu p {
