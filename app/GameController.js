@@ -20,9 +20,9 @@ module.exports = {
       { name: "Doljko", avatar: "demo/url.jpg", score: 1233 },
       { name: "Toroo", avatar: "demo/url.jpg", score: 456 },
       { name: "Ganaa", avatar: "demo/url.jpg", score: 233 },
-      { name: "Demo", avatar: "demo/url.jpg", score: 123 },
+      { name: "Demo", avatar: "demo/url.jpg", score: 342 },
       { name: "Naraa", avatar: "demo/url.jpg", score: 545 },
-      { name: "Boldoo", avatar: "demo/url.jpg", score: 13 }
+      { name: "Boldoo", avatar: "demo/url.jpg", score: 564 }
     ];
 
     Player.remove({}, () => {

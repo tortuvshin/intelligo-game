@@ -42,7 +42,7 @@ function init() {
   var sound = new THREE.Audio( listener );
   var audioLoader = new THREE.AudioLoader();
 
-  audioLoader.load( '../js/sounds/song.mp3', function( buffer ) {
+  audioLoader.load( '../js/sounds/sound.mp3', function( buffer ) {
 	sound.setBuffer( buffer );
 	sound.setLoop(true);
 	sound.setVolume(0.5);
@@ -287,7 +287,7 @@ document.getElementById("start_game_btn").addEventListener('click', function(){
   item1.className = "three-text"
   item2.className = "two-text"
   item3.className = "one-text"
-  
+
   interval_id = setInterval(addRow, 5000);
 
   setTimeout(updateSpeed, 7000)
