@@ -77,7 +77,7 @@ Watch the sass `npm run watch-css`
 ## Authors
 
 [![Enkhbayar Doljinsuren](https://avatars1.githubusercontent.com/u/23227403?s=80)](https://github.com/doljko) |
-[![Turtuvshin Byambaa](https://avatars0.githubusercontent.com/u/12738721?s=80)](https://github.com/tortuvshin)
+[![Turtuvshin Byambaa](https://avatars2.githubusercontent.com/u/9257227?s=80)](https://github.com/tortuvshin)
 ---|---
 [Doljinsuren](https://github.com/doljko) | [Turtuvshin](https://github.com/tortuvshin)
 
