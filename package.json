@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "description": "Game",
   "author": "Tortuvshin Byambaa",
-  "copyright": "Copyright 2018 Techstar, Inc.",
+  "copyright": "Copyright 2019 Opengineer",
   "license": "MIT",
   "main": "app.js",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tortuvshin/intelligo-game.git"
+    "url": "git+https://github.com/opengineer/intelligo-game.git"
   },
   "scripts": {
     "start": "node app.js",
@@ -26,8 +26,8 @@
     "express-session": "^1.14.2",
     "express-validator": "^2.20.8",
     "mongoose": "^5.2.2",
-    "morgan": "^1.9.0",
-    "npm": "^6.1.0",
+    "morgan": "^1.9.1",
+    "npm": "^6.6.0",
     "path": "^0.12.7",
     "request": "^2.79.0"
   },
@@ -35,7 +35,7 @@
     "node_modules"
   ],
   "devDependencies": {
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.11.0",
     "nodemon": "^1.18.3"
   }
 }
