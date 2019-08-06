@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tortuvshin",
+      "name": "Turtuvshin Byambaa",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9257227?v=4",
+      "profile": "https://github.com/tortuvshin",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "intelligo-game",
+  "projectOwner": "intelligo-systems",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
