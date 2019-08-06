@@ -1,5 +1,5 @@
 # Intelligo game
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tortuvshin/intelligo-game)
 
@@ -89,6 +89,7 @@ Watch the sass `npm run watch-css`
 <table>
   <tr>
     <td align="center"><a href="https://github.com/tortuvshin"><img src="https://avatars3.githubusercontent.com/u/9257227?v=4" width="100px;" alt="Turtuvshin Byambaa"/><br /><sub><b>Turtuvshin Byambaa</b></sub></a><br /><a href="#infra-tortuvshin" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/intelligo-systems/intelligo-game/commits?author=tortuvshin" title="Tests">⚠️</a> <a href="https://github.com/intelligo-systems/intelligo-game/commits?author=tortuvshin" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.intelligo.systems/"><img src="https://avatars2.githubusercontent.com/u/12738721?v=4" width="100px;" alt="Enkhbayar Doljinsuren"/><br /><sub><b>Enkhbayar Doljinsuren</b></sub></a><br /><a href="#infra-doljko" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/intelligo-systems/intelligo-game/commits?author=doljko" title="Tests">⚠️</a> <a href="https://github.com/intelligo-systems/intelligo-game/commits?author=doljko" title="Code">💻</a></td>
   </tr>
 </table>
 
