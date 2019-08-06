@@ -17,7 +17,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
-    "body-parser": "1.18.3",
+    "body-parser": "1.19.0",
     "config": "1.30.0",
     "cookie-parser": "1.4.3",
     "ejs": "2.6.1",
