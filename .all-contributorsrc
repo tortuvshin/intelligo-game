@@ -15,6 +15,17 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "doljko",
+      "name": "Enkhbayar Doljinsuren",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12738721?v=4",
+      "profile": "https://www.intelligo.systems/",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
