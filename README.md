@@ -1,12 +1,11 @@
 # Intelligo game
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
-
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tortuvshin/intelligo-game)
 
 Augmented reality game development repository.
 
-| [Requirements][] | [Development][] | [Deploy][] | [Built with][] | [Authors][] | [Contributors][] | [License][] |
-|---|---|---|---|---|---|---|
+| [Requirements][] | [Development][] | [Deploy][] | [Built with][] | [Contributors][] | [License][] |
+|---|---|---|---|---|---|
 
 ## Requirements
 
@@ -74,13 +73,6 @@ Watch the sass `npm run watch-css`
 * [MongoDB](https://www.mongodb.com/download-center)
 * [Tracking.js](https://trackingjs.com/)
 * [Three.js](https://threejs.org/)
-
-## Authors
-
-[![Enkhbayar Doljinsuren](https://avatars0.githubusercontent.com/u/12738721?s=80&v=4)](https://github.com/doljko) |
-[![Turtuvshin Byambaa](https://avatars2.githubusercontent.com/u/9257227?s=80)](https://github.com/tortuvshin)
----|---
-[Doljinsuren](https://github.com/doljko) | [Turtuvshin](https://github.com/tortuvshin)
 
 ## Contributors
 
