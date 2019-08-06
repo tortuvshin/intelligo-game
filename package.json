@@ -17,25 +17,25 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "config": "^1.24.0",
-    "cookie-parser": "^1.4.3",
-    "ejs": "^2.5.1",
-    "express": "^4.15.5",
-    "express-ejs-layouts": "^2.2.0",
-    "express-session": "^1.14.2",
-    "express-validator": "^2.20.8",
-    "mongoose": "^5.2.2",
-    "morgan": "^1.9.1",
-    "npm": "^6.6.0",
-    "path": "^0.12.7",
-    "request": "^2.79.0"
+    "body-parser": "1.18.3",
+    "config": "1.30.0",
+    "cookie-parser": "1.4.3",
+    "ejs": "2.6.1",
+    "express": "4.16.3",
+    "express-ejs-layouts": "2.4.0",
+    "express-session": "1.15.6",
+    "express-validator": "2.21.0",
+    "mongoose": "5.6.8",
+    "morgan": "1.9.1",
+    "npm": "6.10.2",
+    "path": "0.12.7",
+    "request": "2.87.0"
   },
   "cacheDirectories": [
     "node_modules"
   ],
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.3"
+    "node-sass": "4.12.0",
+    "nodemon": "1.19.1"
   }
 }
