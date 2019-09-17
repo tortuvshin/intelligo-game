@@ -1,8 +1,8 @@
-# Intelligo game
+# Intelligo Game - Art & Technology Tohoku 2018 contest
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tortuvshin/intelligo-game)
 
-Augmented reality game development repository.
+Augmented reality game development repository. Special International Prize for the Art & Technology Tohoku 2018 contest.
 
 | [Requirements][] | [Development][] | [Deploy][] | [Built with][] | [Contributors][] | [License][] |
 |---|---|---|---|---|---|
